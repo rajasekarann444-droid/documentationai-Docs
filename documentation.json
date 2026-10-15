@@ -29,6 +29,10 @@
                 "group": "Compliance Management",
                 "pages": [
                   {
+                    "title": "Policies",
+                    "path": "policies"
+                  },
+                  {
                     "title": "frameworks",
                     "path": "frameworks"
                   },
