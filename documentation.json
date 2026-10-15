@@ -29,7 +29,7 @@
                 "group": "Compliance Management",
                 "pages": [
                   {
-                    "title": "frameworks",
+                    "title": "Frameworks",
                     "path": "frameworks"
                   },
                   {
@@ -43,6 +43,15 @@
                   {
                     "title": "Evidence",
                     "path": "evidence"
+                  }
+                ]
+              },
+              {
+                "group": "Risk Management",
+                "pages": [
+                  {
+                    "title": "Risk Management Overview",
+                    "path": "risk-management-overview"
                   }
                 ]
               }
