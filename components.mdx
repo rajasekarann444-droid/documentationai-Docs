@@ -1,92 +1,129 @@
 ---
-title: Components (Sample)
-description: A small showcase of the built-in MDX components with usage guidelines.
+title: Getting Around ComplyHub
+description: Navigate the ComplyHub dashboard, task center, and notification center to manage your compliance workflows efficiently.
 ---
 
-## Quick component tour
+## Getting around ComplyHub
 
-<Callout kind="info">
-These are example components from Documentation.AI. Use them to make pages easier to scan.
+Learn how to navigate ComplyHub's dashboard, find your tasks, and stay on top of compliance activity. Understanding the layout helps you move quickly between frameworks, policies, and evidence.
+
+<Callout kind="info" title="Who can use this feature">
+
+All roles can access the dashboard and task center. Some sections may be restricted based on role permissions.
+
 </Callout>
 
-<Columns cols={3}>
-  <Card title="Callout" icon="info" href="/components/callouts">
-    Use for tips, warnings, and important notes.
-  </Card>
-  <Card title="Steps" icon="check-circle" href="/components/steps">
-    Break tasks into easy, numbered actions.
-  </Card>
-  <Card title="Tabs" icon="layers" href="/components/tabs">
-    Keep alternate examples tidy.
-  </Card>
-</Columns>
+## Dashboard overview
 
-### Callout: usage tips
+The dashboard is your compliance command center. It provides a real-time view of your organization's compliance posture and highlights what needs attention.
 
-**When to use**
+- **Readiness Score**: Overall compliance posture with a breakdown by framework
+- **Task Summary**: Open tasks, overdue items, and completion rate
+- **Recent Activity**: Latest evidence uploads, policy changes, and audit updates
+- **Upcoming Audits**: Scheduled internal and external audits
 
-- Highlight important warnings or constraints that affect success
-- Call out tips that save time or prevent common mistakes
-- Emphasize prerequisites, permissions, or irreversible actions
+The dashboard is customizable. Drag and drop widgets to arrange them in the order that matters most to you.
 
-**When not to use**
+## Navigation walkthrough
 
-- For every minor detail; overuse makes real warnings easy to ignore
-- As a replacement for clear prose and headings
-- To hide critical blocking information at the bottom of a long page
+The left sidebar organizes ComplyHub's modules into logical sections. Here's what you'll find:
 
-## Steps (sample)
+- **Home**: Dashboard and quick actions
+- **Frameworks**: Framework management, control mapping, and evidence. See [Frameworks & Controls](/compliance/frameworks)
+- **Policies**: Policy creation, templates, and publishing. See [Policies](/compliance/policies)
+- **Integrations**: Connected tools and integration health. See [Integrations Overview](/integrations/overview)
+- **Audit Readiness**: Evidence collection, audit center, and readiness reports. See [Audit Readiness](/compliance/audit-readiness)
+- **Task Center**: All assigned and team tasks
+- **Reports**: Compliance reports and exports
+- **Settings**: Account, team, SSO, and notifications. See [Account, Access & Support](/authentication)
+
+## Task Center
+
+The Task Center is the central hub for all compliance tasks, including evidence requests, policy reviews, control testing, and remediation. It's where your team goes to find what needs to be done.
+
+### Task types
+
+- **Evidence Collection**: Upload or verify evidence for specific controls
+- **Policy Review**: Review and approve draft policies
+- **Control Testing**: Validate that implemented controls are operating effectively
+- **Remediation**: Address audit findings or identified gaps
+
+### Completing a task
 
 <Steps>
-  <Step title="Add a heading" icon="type">
-    Start each page with a clear, short title.
+  <Step title="Open the task" icon="folder-open">
+
+  Click on a task from the Task Center to view its details and requirements.
+
   </Step>
-  <Step title="Explain the goal" icon="target">
-    Tell readers what they will achieve.
+  <Step title="Review requirements" icon="eye">
+
+  Read the task description, linked control, and evidence requirements.
+
   </Step>
-  <Step title="Link to next steps" icon="arrow-right">
-    Point to the next page they should read.
+  <Step title="Take action" icon="upload">
+
+  Upload evidence, review a policy, or complete the required action.
+
+  </Step>
+  <Step title="Submit for review" icon="send">
+
+  Submit the completed task for manager or admin review.
+
   </Step>
 </Steps>
 
-### Steps: usage tips
+<Callout kind="tip" title="Pro Tip!">
 
-**When to use**
+Use the My Tasks filter to focus on items assigned to you. Set up daily digest emails in `Settings > Notifications` to receive a summary of overdue and upcoming tasks each morning.
 
-- Readers must follow actions in a specific order
-- You describe tasks that can be completed in one sitting
-- You want to separate conceptual explanation from hands-on actions
+</Callout>
 
-**When not to use**
+## Notification Center
 
-- For unordered checklists where sequence does not matter
-- To document background concepts or architecture
-- For long, branching workflows that need their own dedicated guide
+The notification center keeps you informed about compliance activity. Click the bell icon in the top-right corner to view recent notifications.
 
-## Tabs (sample)
+### Notification types
 
-<Tabs>
-  <Tab title="CLI" icon="terminal">
-    ```bash
-    docs init my-project
-    docs dev
-    ```
-  </Tab>
-  <Tab title="UI" icon="mouse-pointer">
-    Open the editor, choose a page, and start writing.
-  </Tab>
-</Tabs>
+- Task assignments and due date reminders
+- Evidence overdue alerts
+- Policy approval requests
+- Audit reminders and scheduling updates
+- Integration health alerts, including connection failures and token expiration
 
-### Tabs: usage tips
+Configure email digest frequency in `Settings > Notifications`. Choose from real-time, daily digest, or weekly summary.
 
-**When to use**
+<Callout kind="alert" title="Note:">
 
-- You show the same idea in multiple languages or platforms
-- You provide alternate setup paths, such as CLI versus UI
-- You want to keep short variants in one compact section
+Critical notifications, such as overdue evidence and failed integrations, are always sent via email in real time, regardless of your digest settings.
 
-**When not to use**
+</Callout>
 
-- When one variant is strongly recommended over the others
-- For long, independent flows that deserve separate pages
-- When content differs so much that readers must read all variants anyway
+## FAQs
+
+<ExpandableGroup>
+  <Expandable title="Can I customize my dashboard layout?">
+
+  Yes. Drag and drop widgets to rearrange them. Your layout is saved per user, so each team member can customize their own view.
+
+  </Expandable>
+  <Expandable title="How do I filter tasks by framework?">
+
+  Use the framework filter dropdown at the top of the Task Center to narrow tasks to a specific compliance framework.
+
+  </Expandable>
+  <Expandable title="Can I dismiss notifications?">
+
+  Yes. Click the X on individual notifications to dismiss them. Critical alerts cannot be dismissed until the underlying issue is resolved.
+
+  </Expandable>
+  <Expandable title="Where do I find audit reports?">
+
+  Navigate to `Reports > Audit Reports`. You can filter by framework, date range, and audit type.
+
+  </Expandable>
+</ExpandableGroup>
+
+## Need help?
+
+Email support@complyhub.com, contact your CSM, or visit the [Help Center](/help-center) for more resources.

@@ -1,78 +1,104 @@
 ---
-title: Set Up Your Documentation
-description: 'A minimal, editable starting point for your own documentation site.'
+title: "Log In to ComplyHub"
+description: "Learn how to log in to ComplyHub and get started with your compliance tasks in minutes."
 ---
-## Start here (5–10 minutes)
 
-1. Edit this page so it describes your product and audience.
+Congrats on signing up for ComplyHub! Learn how to access your account for the first time and for returning visits, so you can start your compliance journey right away.
 
-2. Customize your onboarding flow in the [Quickstart](/quickstart) page.
+<Callout kind="info" title="Heads Up!">
 
-3. Delete or rewrite any sections and pages you do not plan to use.
+First-time users receive an email invitation link and must activate their account before logging in. If your organization has SSO enforced, you will authenticate through your identity provider instead of a password.
 
-4. Invite a teammate to review the structure and concepts starting from [Core Concepts](/concepts).
-
-<Callout kind="alert" collapsed="false">
-  This site ships with placeholder content. Edit the text, links, and examples so they match your product before sharing it with others.
 </Callout>
 
-## What you get
-
-<Columns cols="3">
-  <Card title="Docs structure" href="/quickstart" icon="book-open" horizontal="false">
-    A clear navigation layout with starter pages you can rename or replace.
-  </Card>
-
-  <Card title="Components" href="#try-a-few-components" icon="layout-grid" horizontal="false" target="_self">
-    Prebuilt blocks like Callouts, Steps, Tabs, and Cards to keep pages clean.
-  </Card>
-
-  <Card title="API reference hook" href="/authentication" icon="code" horizontal="false">
-    A placeholder `openapi.yaml` you can swap with your real API spec.
-  </Card>
-</Columns>
-
-## Make your first edit
+## For First-Time Users
 
 <Steps>
-  <Step title="Rewrite this page" icon="edit" title-type="p">
-    Update the title, description, and sections in `introduction` so they reflect your product and documentation goals.
+  <Step title="Check your email" icon="mail">
+
+Look for an email from ComplyHub with your unique access link. Check spam if you don't see it within 5 minutes.
+
   </Step>
 
-  <Step title="Customize Quickstart" icon="zap" title-type="p">
-    Replace the steps in `quickstart` with your real onboarding flow so new readers know exactly how to get started.
+  <Step title="Click the activation link" icon="mouse-pointer-click">
+
+Click the Login button in the email to activate your account.
+
   </Step>
 
-  <Step title="Remove or repurpose samples" icon="trash" title-type="p">
-    Delete unused sample sections and pages, or rewrite them with your own content to keep navigation focused.
+  <Step title="Set up your credentials" icon="key-round">
+
+Create a password or authenticate via SSO if your admin has configured it.
+
+  </Step>
+
+  <Step title="Complete your profile" icon="user-check">
+
+Add your name and role, then access the dashboard to begin onboarding.
+
   </Step>
 </Steps>
 
-## Try a few components
+## For Returning Users
 
-You can browse the component gallery in the [Components](/components) page for ready-to-use examples of Cards, Callouts, Steps, Tabs, and more.
+<Steps>
+  <Step title="Open the login page" icon="globe">
 
-## Continue to the rest of the sample
+Navigate to your ComplyHub login page at `app.complyhub.com`.
 
-<Columns cols="2">
-  <Card title="Quickstart" href="/quickstart" icon="zap" horizontal="false">
-    See the minimal setup flow.
-  </Card>
+  </Step>
 
-  <Card title="Core Concepts" href="/concepts" icon="layers" horizontal="false">
-    Learn how pages, navigation, and components fit together.
-  </Card>
+  <Step title="Enter your email" icon="mail">
 
-  <Card title="Components" href="/components" icon="code" horizontal="false">
-    A small gallery of built-in components.
-  </Card>
+Use your registered work email address and click Continue.
 
-  <Card title="Authentication" href="/authentication" icon="lock" horizontal="false">
-    Example layout for an auth guide.
-  </Card>
+  </Step>
 
-  <Card title="Help Center" href="/help-center" icon="help-circle" horizontal="false">
-    Starter FAQ, guides, and troubleshooting templates.
-  </Card>
-</Columns>
+  <Step title="Log in" icon="log-in">
 
+Authenticate via SSO with Okta, Google, or Microsoft Entra, or request a one-time verification code sent to your email.
+
+  </Step>
+</Steps>
+
+## SSO Login
+
+ComplyHub supports single sign-on through Okta, Google Workspace, and Microsoft Entra ID. Admins can configure SSO from `Settings > SSO Configuration`. Once enabled, users authenticate through their identity provider instead of a separate password. For setup details, see [Account, Access & Support](/authentication).
+
+<Callout kind="alert" title="Note:">
+
+If your organization has SSO enforced, you will not see the one-time password option on the login screen. Contact your admin if you need password-based access.
+
+</Callout>
+
+## FAQs
+
+<ExpandableGroup>
+  <Expandable title="How do I change my password">
+
+Navigate to `Profile > Security > Reset Password`. If SSO is enforced, password management is handled by your identity provider.
+
+  </Expandable>
+
+  <Expandable title="I didn't receive the invitation email. What should I do?">
+
+Check your spam folder first. If it's not there, ask your admin to resend the invitation from `Settings > Team Management`.
+
+  </Expandable>
+
+  <Expandable title="How do I enable SSO for my team?">
+
+See the [Account, Access & Support](/authentication) page for step-by-step SSO configuration instructions.
+
+  </Expandable>
+
+  <Expandable title="Can I stay logged in across sessions?">
+
+Yes, sessions persist for 30 days unless your organization has SSO timeout policies that override this default.
+
+  </Expandable>
+</ExpandableGroup>
+
+## Need Help?
+
+For login issues, email support@complyhub.com or contact your Customer Success Manager. You can also browse the [Help Center](/help-center) for FAQs and troubleshooting guides.

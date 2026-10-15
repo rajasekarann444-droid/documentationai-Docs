@@ -1,96 +1,120 @@
 {
-  "name": "Starter Kit",
+  "name": "ComplyHub Help Center",
   "colors": {
     "light": {
-      "brand": "#F97316"
+      "brand": "#4F46E5"
     },
     "dark": {
-      "brand": "#FDBA74"
+      "brand": "#818CF8"
     }
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
-        "icon": "book",
+        "tab": "Getting Started",
+        "icon": "rocket",
         "groups": [
           {
-            "group": "Start Here",
-            "icon": "rocket",
+            "group": "Stackflo Overview",
             "pages": [
               {
                 "title": "Introduction",
-                "path": "introduction",
-                "icon": "home"
-              },
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
-              },
-              {
-                "title": "Components",
-                "path": "components",
-                "icon": "code"
+                "path": "stackflo-introduction"
               }
             ]
           },
           {
-            "group": "Components",
-            "icon": "layers",
+            "group": "Onboarding & Setup",
+            "icon": "play",
             "pages": [
               {
-                "title": "Images",
-                "path": "components/images",
-                "icon": "image"
+                "title": "Log In to ComplyHub",
+                "path": "introduction",
+                "icon": "log-in"
               },
               {
-                "title": "Cards",
-                "path": "components/cards",
-                "icon": "square"
+                "title": "Quick Start Guide: Setup Wizard",
+                "path": "quickstart",
+                "icon": "zap"
               },
               {
-                "title": "Code",
-                "path": "components/code",
-                "icon": "code"
+                "title": "Complete Onboarding Tasks",
+                "path": "concepts",
+                "icon": "check-square"
+              }
+            ]
+          },
+          {
+            "group": "Getting Around",
+            "icon": "compass",
+            "pages": [
+              {
+                "title": "Getting Around ComplyHub",
+                "path": "components",
+                "icon": "layout"
               },
               {
-                "title": "Callouts",
-                "path": "components/callouts",
-                "icon": "message-square"
-              },
-              {
-                "title": "Steps",
-                "path": "components/steps",
-                "icon": "list-ordered"
-              },
-              {
-                "title": "Tabs",
-                "path": "components/tabs",
-                "icon": "columns"
+                "title": "Account, Access & Support",
+                "path": "authentication",
+                "icon": "settings"
               }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
+        "tab": "Compliance",
+        "icon": "shield-check",
         "groups": [
           {
-            "group": "Overview",
-            "icon": "file-text",
+            "group": "Frameworks & Controls",
+            "icon": "list-checks",
             "pages": [
               {
-                "title": "Authentication",
-                "path": "authentication",
-                "icon": "lock"
+                "title": "Frameworks & Controls",
+                "path": "compliance/frameworks",
+                "icon": "shield"
               }
             ]
           },
           {
-            "group": "Sample Endpoints",
-            "openapi": "openapi.yaml"
+            "group": "Policies",
+            "icon": "file-text",
+            "pages": [
+              {
+                "title": "Policies",
+                "path": "compliance/policies",
+                "icon": "file-text"
+              }
+            ]
+          },
+          {
+            "group": "Audit Readiness",
+            "icon": "clipboard-check",
+            "pages": [
+              {
+                "title": "Audit Readiness",
+                "path": "compliance/audit-readiness",
+                "icon": "clipboard-check"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "icon": "plug",
+        "groups": [
+          {
+            "group": "Overview",
+            "icon": "view-grid",
+            "pages": [
+              {
+                "title": "Integrations Overview",
+                "path": "integrations/overview",
+                "icon": "plug"
+              }
+            ]
           }
         ]
       },
@@ -109,7 +133,7 @@
             "expandable": false,
             "pages": [
               {
-                "title": "Documentation Source",
+                "title": "Common Questions",
                 "path": "help-center/faq/getting-started"
               }
             ]
@@ -120,7 +144,7 @@
             "expandable": false,
             "pages": [
               {
-                "title": "Page Missing in Sidebar",
+                "title": "Common Issues",
                 "path": "help-center/troubleshooting/install-error"
               }
             ]
@@ -131,7 +155,7 @@
             "expandable": false,
             "pages": [
               {
-                "title": "Create Your First Page",
+                "title": "Setup Guide",
                 "path": "help-center/guides/setup-project"
               }
             ]
@@ -139,11 +163,11 @@
         ]
       },
       {
-        "tab": "Changelog",
+        "tab": "Product Updates",
         "icon": "clock",
         "pages": [
           {
-            "title": "Changelog",
+            "title": "Product Updates",
             "path": "changelog",
             "icon": "history"
           }

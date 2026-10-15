@@ -1,54 +1,147 @@
 ---
-title: Core Concepts
-description: The basic building blocks of this starter kit.
+title: Complete Onboarding Tasks
+description: Complete your onboarding checklist by assigning department owners, scheduling audits, and setting up your compliance workflows in ComplyHub.
 ---
 
-## Overview
+## Complete your onboarding tasks
 
-<Callout kind="alert">
-This page is an example. Replace every concept with the real terms your product uses.
+After completing the setup wizard, your onboarding checklist guides you through the remaining steps to get fully operational. This page covers each task and what you need to finish them.
+
+<Callout kind="info" title="Who can use this feature">
+
+Available to Admin and Manager roles on all plans. Some tasks require integrations configured during the [Setup Wizard](/quickstart).
+
 </Callout>
 
-## The building blocks
+## Onboarding checklist overview
 
-<Columns cols={2}>
-  <Card title="Pages" icon="file-text">
-    Every page is an `.mdx` file. Content lives in the repo and is safe to edit.
-  </Card>
-  <Card title="Navigation" icon="list">
-    Sidebar structure comes from `documentation.json`.
-  </Card>
-  <Card title="Components" icon="layout-grid">
-    Reusable blocks like Callouts, Steps, Tabs, and Cards keep pages consistent.
-  </Card>
-  <Card title="API Reference" icon="code">
-    If you use it, the API tab reads from `openapi.yaml`.
-  </Card>
-</Columns>
+The onboarding checklist is visible on your dashboard task center. It tracks your progress through the key tasks needed to achieve compliance readiness. Here are the tasks you'll complete:
 
-## Navigation shape (sample)
+- Assign department owners
+- Review and publish initial policies
+- Schedule internal audits
+- Connect required integrations
+- Complete first evidence collection cycle
+- Invite team members and assign roles
 
-```json
-{
-  "tab": "Documentation",
-  "groups": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        { "title": "Introduction", "path": "introduction" }
-      ]
-    }
-  ]
-}
-```
+## Assigning department owners
 
-## How to adapt this page
+Department owners are responsible for managing controls, reviewing evidence, and responding to audit findings within their department. You started this during the setup wizard, so now confirm and finalize all assignments.
 
 <Steps>
-  <Step title="Replace the terms" icon="edit">
-    Swap "Pages" and "Components" for your real domain language.
+  <Step title="Navigate to departments" icon="settings">
+
+Go to `Settings > Departments` to see all departments in your organization.
+
   </Step>
-  <Step title="Add your concepts" icon="plus">
-    Create a section for the ideas your users must learn first.
+  <Step title="Select a department" icon="folder">
+
+Click on the department you want to assign an owner to.
+
+  </Step>
+  <Step title="Assign an owner" icon="user-plus">
+
+Choose a teammate from your team list to be the department owner.
+
+  </Step>
+  <Step title="Confirm the assignment" icon="check">
+
+Click **Save** to finalize. The owner will receive a notification with their new responsibilities.
+
   </Step>
 </Steps>
+
+<Callout kind="alert" title="Note:">
+
+Department owner assignment is mandatory. Without owners assigned, control evidence cannot be routed for review and your readiness score will remain incomplete.
+
+</Callout>
+
+## Reviewing and publishing initial policies
+
+The policy templates selected during the setup wizard need review before publishing. Navigate to the Policies module to review each template, customize content, and submit for approval. For detailed instructions on creating and publishing policies, see the [Policies](/compliance/policies) page.
+
+## Scheduling internal audits
+
+Internal audits help you validate your compliance posture before an external audit. Schedule your first internal audit to identify gaps early.
+
+<Steps>
+  <Step title="Open the audit center" icon="calendar">
+
+Navigate to `Audit Readiness > Internal Audits`.
+
+  </Step>
+  <Step title="Create a new audit" icon="plus">
+
+Click **Schedule New Audit** to start the configuration.
+
+  </Step>
+  <Step title="Select audit scope" icon="target">
+
+Choose the framework, controls, and departments to include in the audit.
+
+  </Step>
+  <Step title="Set cadence and date" icon="clock">
+
+Choose a recurring cadence, such as quarterly, semi-annual, or annual, and set the start date.
+
+  </Step>
+  <Step title="Assign auditors" icon="users">
+
+Select internal team members who will conduct the audit.
+
+  </Step>
+</Steps>
+
+<Callout kind="tip" title="Pro Tip!">
+
+Schedule your first internal audit 30 days after completing setup. This gives the platform enough time to collect automated evidence, making the audit more meaningful and the results more actionable.
+
+</Callout>
+
+## Connecting required integrations
+
+Some checklist items depend on connected tools. If you skipped integrations during the setup wizard, complete them now. Navigate to the Integrations module to connect cloud providers, identity providers, MDM, and other tools. See the [Integrations Overview](/integrations/overview) for detailed setup instructions.
+
+## Completing first evidence collection
+
+Automated evidence collection begins once integrations are connected. ComplyHub collects evidence on a scheduled basis, typically daily, from each connected tool. For controls without automated collection, you can upload evidence manually via the Task Center.
+
+<Callout kind="info" title="Note:">
+
+The first evidence collection cycle may take 24–48 hours to complete after integrations are connected. Check the Task Center for pending evidence items.
+
+</Callout>
+
+## Tracking your progress
+
+Your progress indicator on the dashboard shows how many checklist items are complete. As you finish each task, your readiness score updates in real time. Completing all checklist items unlocks the Readiness Report, which provides a comprehensive view of your compliance posture.
+
+## FAQs and troubleshooting
+
+<ExpandableGroup>
+  <Expandable title="What happens if I skip a checklist task?">
+
+Tasks remain open. Your readiness score will reflect incomplete items. You can complete them at any time because the checklist does not expire.
+
+  </Expandable>
+  <Expandable title="Can I reassign a department owner?">
+
+Yes. Go to `Settings > Departments`, select the department, and choose a new owner. The previous owner retains access to their other assignments.
+
+  </Expandable>
+  <Expandable title="How do I know when evidence collection is complete?">
+
+Check the Task Center for pending evidence items. You can also view the Readiness Report for a comprehensive overview of evidence coverage.
+
+  </Expandable>
+  <Expandable title="My readiness score hasn't changed after completing a task. What should I do?">
+
+Refresh the dashboard. If the score still hasn't updated, check whether dependent tasks also need completion. Contact support if the issue persists.
+
+  </Expandable>
+</ExpandableGroup>
+
+## Need help?
+
+Email support@complyhub.com or contact your CSM for guidance on completing your onboarding checklist. You can also visit the [Help Center](/help-center) for additional resources.

@@ -1,57 +1,166 @@
 ---
-title: Authentication (Sample)
-description: Sample guidance for authentication and OpenAPI usage.
+title: Account, Access & Support
+description: Manage user roles, configure SSO, invite team members, and access support resources for your ComplyHub account.
 ---
 
-## Overview
+Manage your team's access to ComplyHub, configure single sign-on, and know where to turn when you need help. This page covers roles, SSO setup, team management, and support options.
 
-This is sample content. Replace tokens, URLs, headers, and flows with your real authentication requirements.
+<Callout kind="info" title="Who can use this feature">
 
-<Callout kind="info">
-
-This site ships with placeholder content for authentication. Update this page and `openapi.yaml` to match your real API before sharing with users.
+Account management requires Admin role. SSO configuration is available on Growth and Scale plans.
 
 </Callout>
 
-This API uses OpenAPI to describe endpoints, parameters, and responses. The reference is generated from `openapi.yaml`, so keep that file up to date as your API evolves.
+## User Roles & Permissions
 
-## Authentication
+ComplyHub uses role-based access control to ensure team members see only what they need. Here are the available roles:
 
-Use a bearer token in the `Authorization` header for authenticated requests. Replace the base URL and token with values for your own API.
+- **Admin**: Full access including settings, billing, user management, and framework configuration
+- **Manager**: Manage frameworks, assign tasks, review evidence, and generate reports. Cannot manage billing or account settings.
+- **Contributor**: Upload evidence, complete assigned tasks, and view assigned controls
+- **Viewer**: Read-only access to dashboards and reports
 
-```bash
-curl https://api.example.com/v1/example \
-  -H "Authorization: Bearer YOUR_TOKEN"
-```
+<Callout kind="alert" title="Note:">
 
-<ParamField header="Authorization" param-type="string" required="true">
-  `Bearer YOUR_TOKEN`
-</ParamField>
+At least one Admin must remain on the account at all times. The system prevents removing the last Admin to ensure account continuity.
 
-## Keep OpenAPI in sync
+</Callout>
 
-Define your authentication and base settings in `openapi.yaml` so the API Reference stays accurate and consistent.
+## Configuring SSO
 
-At a minimum, you should:
+Single sign-on lets your team authenticate through your existing identity provider instead of managing separate passwords. ComplyHub supports Okta, Google Workspace, Microsoft Entra ID, and custom SAML 2.0 providers.
 
-- Define one or more security schemes that describe how clients authenticate (for example, bearer token, API key in a header, or other scheme).
-- Reference those security schemes on operations that require authentication so they are clearly marked as secured.
-- Set the correct base URL and any required global headers (for example, versioning or tenant headers) so example requests are copy-pasteable.
+<Steps>
+<Step title="Open SSO settings" icon="settings">
 
-When your real authentication flow changes (for example, new header names, token formats, or additional requirements), update `openapi.yaml`. The generated API Reference will then reflect your current auth model without needing to edit each endpoint page by hand.
+Navigate to `Settings > SSO Configuration`.
 
-## Using the API reference
+</Step>
 
-Use the API Reference to explore endpoints, required parameters, and example responses. When you change authentication headers or base URLs, update `openapi.yaml` so the generated reference matches what your clients should use.
+<Step title="Select your provider" icon="server">
 
-## Common mistakes
+Choose Okta, Google Workspace, Microsoft Entra ID, or Custom SAML 2.0.
 
-<Expandable title="Why am I getting a 401?" default-open="false">
+</Step>
 
-Verify that:
+<Step title="Enter configuration details" icon="file-text">
 
-- The token is valid and not expired.
-- The token is sent in the `Authorization` header.
-- The header value includes the `Bearer` prefix and a space before the token.
+Provide the Entity ID, SSO URL, and X.509 certificate from your identity provider.
+
+</Step>
+
+<Step title="Map user attributes" icon="users">
+
+Map email, name, and group attributes from your IdP to ComplyHub roles.
+
+</Step>
+
+<Step title="Test the connection" icon="check-circle">
+
+Run a test login to verify the configuration works before enabling.
+
+</Step>
+
+<Step title="Enable SSO enforcement" icon="shield">
+
+Toggle Enforce SSO to require all users to authenticate through your IdP.
+
+</Step>
+</Steps>
+
+<Callout kind="alert" title="Note:">
+
+Enabling Enforce SSO disables password-based login for all users. Ensure your IdP is properly configured and tested before enabling this option.
+
+</Callout>
+
+## Managing Team Members
+
+Invite teammates and assign roles to distribute compliance responsibilities across your organization.
+
+<Steps>
+<Step title="Open team management" icon="users">
+
+Navigate to `Settings > Team Management`.
+
+</Step>
+
+<Step title="Invite a member" icon="user-plus">
+
+Click Invite Team Member and enter the person's email address.
+
+</Step>
+
+<Step title="Assign a role" icon="shield">
+
+Select Admin, Manager, Contributor, or Viewer based on the access level needed.
+
+</Step>
+
+<Step title="Send invitation" icon="mail">
+
+Click Send Invitation. The invitee receives an email link to activate their account.
+
+</Step>
+</Steps>
+
+For first-time login steps, see [Log In to ComplyHub](/introduction).
+
+<Callout kind="tip" title="Pro Tip!">
+
+Use SSO group mappings to automatically assign roles based on IdP group membership. This eliminates manual role assignment as your team grows and ensures access stays in sync with your org structure.
+
+</Callout>
+
+## Support Resources
+
+ComplyHub offers multiple support channels to help you at every stage of your compliance journey.
+
+- **Email Support**: support@complyhub.com, response within 24 hours on business days
+- **Customer Success Manager**: Dedicated CSM for Growth and Scale plan customers
+- **In-App Help**: Click the help icon in the bottom-right corner for contextual guidance
+- **Help Center**: Visit the [Help Center](/help-center) for FAQs, troubleshooting, and guides
+
+<Callout kind="info" title="Note:">
+
+For urgent compliance deadline-related issues, include `Urgent` in your email subject line for priority handling.
+
+</Callout>
+
+## FAQs
+
+<ExpandableGroup>
+<Expandable title="How do I reset a team member's password?">
+
+If SSO is not enforced, the user can reset from the login page. If SSO is enforced, password reset is managed by your identity provider.
 
 </Expandable>
+
+<Expandable title="Can I export a list of users and their roles?">
+
+Yes, go to `Settings > Team Management > Export` to download a CSV of all users and their assigned roles.
+
+</Expandable>
+
+<Expandable title="What happens when I deactivate a user?">
+
+Their access is revoked immediately. Their uploaded evidence and task history are retained for audit purposes.
+
+</Expandable>
+
+<Expandable title="How do I change my own role?">
+
+You cannot change your own role. Ask another Admin to update it for you.
+
+</Expandable>
+
+<Expandable title="Can I bulk-import users?">
+
+Yes, if you have SSO configured, users are synced automatically from your IdP. For manual bulk import, contact support@complyhub.com.
+
+</Expandable>
+</ExpandableGroup>
+
+## Need Help?
+
+Contact support@complyhub.com or your CSM for account-related questions. For login issues, see [Log In to ComplyHub](/introduction). For navigating the platform, see [Getting Around ComplyHub](/components).

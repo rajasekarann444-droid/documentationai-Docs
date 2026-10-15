@@ -1,0 +1,205 @@
+---
+title: "Frameworks & Controls"
+description: "Explore supported compliance frameworks, map controls across multiple standards, and manage your unified control framework in ComplyHub."
+---
+
+## Frameworks and controls
+
+ComplyHub supports industry-standard compliance frameworks out of the box. Learn how to select frameworks, map controls, and use the unified control framework to reduce duplication across audits.
+
+<Callout kind="info" title="Who can use this feature">
+
+Framework management is available to Admin and Manager roles. Supported plans include Foundation with up to 2 frameworks, Growth with up to 5 frameworks, and Scale with unlimited frameworks.
+
+</Callout>
+
+## Supported frameworks
+
+<Columns cols={3}>
+<Card title="SOC 2 Type II" href="/compliance/frameworks#soc-2-type-ii" icon="shield">
+
+Trust Services Criteria with 64 controls.
+
+</Card>
+
+<Card title="ISO 27001" href="/compliance/frameworks#iso-27001" icon="lock">
+
+Information security management with 114 controls.
+
+</Card>
+
+<Card title="ISO 27701" href="/compliance/frameworks#iso-27701" icon="user-check">
+
+Privacy information management extension.
+
+</Card>
+
+<Card title="HIPAA" href="/compliance/frameworks#hipaa" icon="heart-pulse">
+
+Healthcare privacy and security requirements.
+
+</Card>
+
+<Card title="GDPR" href="/compliance/frameworks#gdpr" icon="globe">
+
+EU data protection regulation.
+
+</Card>
+
+<Card title="PCI DSS" href="/compliance/frameworks#pci-dss" icon="credit-card">
+
+Payment card data security standard.
+
+</Card>
+
+<Card title="NIST CSF 2.0" href="/compliance/frameworks#nist-csf-20" icon="server">
+
+Cybersecurity framework with 108 controls.
+
+</Card>
+
+<Card title="CIS Controls v8" href="/compliance/frameworks#cis-controls-v8" icon="check-circle">
+
+Critical security controls.
+
+</Card>
+
+<Card title="Custom Framework" href="/compliance/frameworks#custom-framework" icon="settings">
+
+Build your own framework on Growth and Scale plans.
+
+</Card>
+</Columns>
+
+## Unified control framework
+
+The unified control framework is a single control set that maps across multiple frameworks. Implement a control once, then use the mapped implementation to satisfy requirements across several standards.
+
+For example, when you implement an **Access Control Policy**, ComplyHub can map it to SOC 2 CC6.1, ISO 27001 A.9.1.1, HIPAA §164.312(a)(1), and corresponding requirements in other enabled frameworks.
+
+This approach helps you:
+
+- Reduce audit preparation time.
+- Eliminate duplicate control work.
+- Maintain consistent implementation details across frameworks.
+- Collect and reuse evidence for related requirements.
+
+<Callout kind="tip" title="Pro Tip!">
+
+Map controls to your most demanding framework first, typically SOC 2 or ISO 27001. The unified framework automatically populates mappings for less stringent frameworks, saving hours of manual work.
+
+</Callout>
+
+## Selecting frameworks
+
+Use framework management to enable the standards your organization needs to track.
+
+<Steps>
+<Step title="Open framework management" icon="settings">
+
+Navigate to `Frameworks > Manage Frameworks`.
+
+</Step>
+
+<Step title="Browse the library" icon="search">
+
+Review the available frameworks and their control counts.
+
+</Step>
+
+<Step title="Enable a framework" icon="plus">
+
+Select **Enable** on each framework you need.
+
+</Step>
+
+<Step title="Review auto-mapped controls" icon="check-circle">
+
+Open the unified view to see how the new controls map to existing controls.
+
+</Step>
+</Steps>
+
+<Callout kind="alert" title="Note:">
+
+Enabling a framework immediately adds its controls to your task list. Confirm that your team has capacity to manage the additional requirements before enabling multiple frameworks at the same time.
+
+</Callout>
+
+## Mapping controls
+
+Review and adjust framework mappings from the unified control list.
+
+<Steps>
+<Step title="Open a control" icon="folder-open">
+
+Select a control from the unified control list.
+
+</Step>
+
+<Step title="Review auto-mappings" icon="eye">
+
+Check which framework requirements ComplyHub mapped automatically.
+
+</Step>
+
+<Step title="Adjust mappings" icon="edit">
+
+Add or modify manual mappings when the automatic mappings do not match your implementation.
+
+</Step>
+
+<Step title="Save" icon="save">
+
+Save the control with its updated mappings.
+
+</Step>
+</Steps>
+
+## Managing controls
+
+### Viewing controls
+
+Filter controls by framework, status, owner, or risk level to find the requirements that need attention.
+
+### Editing controls
+
+Update implementation details, evidence requirements, and risk ratings as your compliance program changes.
+
+### Assigning owners
+
+Link controls to department owners so each requirement has a clear person or team responsible for implementation and evidence.
+
+## FAQs
+
+<ExpandableGroup>
+<Expandable title="Can I add a custom framework?">
+
+Yes. Use the Custom Framework Builder, available on Growth and Scale plans.
+
+</Expandable>
+
+<Expandable title="How does control mapping work between SOC 2 and ISO 27001?">
+
+The unified framework automatically maps common controls between SOC 2 and ISO 27001. Review the mappings and adjust them manually when your implementation requires a different relationship.
+
+</Expandable>
+
+<Expandable title="What if a control does not apply to my organization?">
+
+Mark the control as **N/A** and provide a justification. ComplyHub excludes controls marked N/A from your readiness score.
+
+</Expandable>
+
+<Expandable title="Can I export my control mappings?">
+
+Yes. Navigate to `Reports > Control Mapping Export` to download your mappings as a CSV or PDF.
+
+</Expandable>
+</ExpandableGroup>
+
+## Need help?
+
+Email [support@complyhub.com](mailto:support@complyhub.com), contact your Customer Success Manager, or visit the [Help Center](/help-center).
+
+For related guidance, see [Policies](/compliance/policies), [Audit Readiness](/compliance/audit-readiness), and [Complete Onboarding Tasks](/concepts).

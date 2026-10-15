@@ -1,58 +1,151 @@
 ---
-title: Quickstart
-description: Minimal steps to customize this sample starter kit.
+title: "Quick Start Guide: Setup Wizard"
+description: "Walk through the ComplyHub setup wizard to configure your organization, policies, employees, and tool integrations for compliance automation."
 ---
-## Overview
 
-<Callout kind="alert" collapsed="false">
-  This site ships with placeholder content. Use this quickstart to replace it with your real product docs.
+Welcome to ComplyHub! This guide walks you through the four-section setup wizard so you can start automating compliance from day one. The wizard launches automatically the first time you log in as an admin.
+
+<Callout kind="info" title="Who can use this feature">
+
+Supported on Foundation, Growth, and Scale plans. Admin access is required to run the setup wizard.
+
 </Callout>
 
-## 1. Update a page
+## Getting Started
 
-<Steps>
-  <Step title="Edit introduction" icon="edit" title-type="p">
-    Replace the sample introduction with a concise overview of your product and the key actions you want new users to take first.
-  </Step>
+The setup wizard appears automatically when you first log in as an admin. It guides you through four main sections:
 
-  <Step title="Preview your change" icon="monitor" title-type="p">
-    Use your dashboard board editor to confirm the updated introduction looks and reads as expected.
-  </Step>
-</Steps>
+1. Prerequisite Information
+2. Policy Setup
+3. Employee Onboarding
+4. Tool Integrations
 
-## 2. Add a new page
+Let's walk through each section.
 
-<Steps>
-  <Step title="Add a page" icon="file-text" title-type="p">
-    Create a new `page` by clicking on the + button from the left navigation bar of dashboard. If you are using git, create the .mdx file and add to navigation bar using documentation.json
-  </Step>
-</Steps>
+## Section 1: Prerequisite Information
 
-## Example onboarding flow (replace with yours)
+This section ensures your organization's essential details are properly configured across all ComplyHub modules.
 
-1. Sign up for an account and verify your email.
+### 1: Add your organization details
 
-2. Create your first workspace, project, or environment.
+Enter your company name, industry, organization size, and compliance goals. This information drives framework recommendations and policy templates throughout the platform.
 
-3. Add one integration or data source to connect your existing tools.
+### 2: Connect your identity provider
 
-4. Complete a guided action (for example, run your first job or publish your first resource).
+Integrate with your identity provider to sync employee data and enforce access controls. ComplyHub supports Okta, Google Workspace, Microsoft Entra ID, OneLogin, JumpCloud, and custom SAML 2.0 providers.
 
-5. Invite a teammate and assign a basic role or permission.
+### 3: Assign department owners
 
-## 3. Connect API Reference (optional)
+Assign a teammate as the owner for each department. Owners are responsible for managing controls and evidence within their department. You can assign the same person to multiple departments, but each department requires exactly one owner.
 
-If you have an API, replace `openapi.yaml` with your real OpenAPI file. If you do not need an API reference, remove that tab either from dashboard or  `documentation.json`.
+<Callout kind="alert" title="Note:">
 
-## Next steps
+Department owners must be assigned before evidence collection can begin. This is a mandatory step. Without owners, control evidence cannot be routed for review and your readiness score will remain incomplete.
 
-<Columns cols="2">
-  <Card title="Core Concepts" href="/concepts" icon="layers" horizontal="false">
-    Keep the mental model simple and easy to scan.
-  </Card>
+</Callout>
 
-  <Card title="Authentication" href="/authentication" icon="lock" horizontal="false">
-    Add your real auth flows and security notes.
-  </Card>
-</Columns>
+### 4: Connect your cloud providers
 
+Integrate with AWS, GCP, or Azure to enable automated cloud security scans. These scans generate evidence for compliance with regulatory standards and help maintain a secure infrastructure.
+
+<Callout kind="alert" title="Note:">
+
+Connecting at least one cloud provider is mandatory for ComplyHub to run automated evidence collection on your cloud infrastructure.
+
+</Callout>
+
+### 5: Schedule internal audits
+
+Set tentative internal audit dates for each framework. ComplyHub recommends scheduling the first audit 4–6 weeks after your kick-off, once policies and evidence are in place. You can adjust dates later in the Audit Center.
+
+## Section 2: Policy Setup
+
+Configure your policy environment during onboarding. If your organization has policy variables enabled, you can set up variables like company name, effective date, and department names here.
+
+### 1: Review policy templates
+
+Browse the template library, which includes Acceptable Use Policy, Access Control Policy, Incident Response Policy, Data Retention Policy, and more. Templates are pre-mapped to SOC 2, ISO 27001, HIPAA, and GDPR controls.
+
+### 2: Customize policies
+
+Edit template content in the markdown editor. Use variables like `{{company_name}}` and `{{effective_date}}` to auto-populate organization-specific details.
+
+### 3: Publish policies
+
+Submit policies for approval and publish them to the policy portal. Published policies are added to the employee onboarding checklist automatically.
+
+## Section 3: Employee Onboarding
+
+Configure the tools and processes that manage your employee lifecycle and ensure workforce compliance.
+
+### 1: Configure your MDM tool
+
+Connect your Mobile Device Management tool to collect device compliance evidence. ComplyHub supports Jamf Pro, Microsoft Intune, Kandji, JumpCloud, Fleet, and NinjaOne. If you do not have an MDM tool, you can use ComplyHub Agent as a lightweight alternative.
+
+<Callout kind="tip" title="Pro Tip!">
+
+Connect your MDM tool early to start collecting device compliance evidence from day one. The longer your data history, the stronger your audit posture.
+
+</Callout>
+
+### 2: Configure your BGV tool
+
+Connect your background verification tool to automate candidate screening. ComplyHub supports Certn, SpringVerify, and Checkr. Choose whether to run checks for all employees or only those hired after a specific date.
+
+### 3: Select training modules
+
+Choose security training programs based on your compliance requirements. ComplyHub offers training for HIPAA, GDPR, ISO 27001, and ISO 9001. Set start and end dates, and employees will access training through the Employee Portal.
+
+### 4: Select employee policies
+
+Choose which published policies employees must acknowledge. These are added to the default onboarding checklist so new hires accept them during onboarding.
+
+## Section 4: Tool Integrations
+
+Connect your tech stack to automate evidence collection across your organization. ComplyHub supports integrations across 15+ tool categories, including version control, project management, HRIS, vulnerability scanners, incident management, and communication tools.
+
+You can integrate tools now or add them later via the Integrations module. For detailed guidance on connecting specific tools, see the [Integrations Overview](/integrations/overview).
+
+<Callout kind="alert" title="Note:">
+
+You can integrate any number of tools. If you prefer, skip this section for now and add integrations later. The wizard saves your progress.
+
+</Callout>
+
+## FAQs & Troubleshooting
+
+<ExpandableGroup>
+  <Expandable title="Can I skip a section and come back later?">
+
+  Yes, the wizard saves your progress automatically. Resume from where you left off by navigating to the Task Center.
+
+  </Expandable>
+
+  <Expandable title="What if my identity provider isn't listed?">
+
+  Contact support@complyhub.com for custom SAML 2.0 configuration. Most providers supporting SAML 2.0 or OIDC can be integrated.
+
+  </Expandable>
+
+  <Expandable title="How long does setup typically take?">
+
+  Setup takes 30–45 minutes if you have all prerequisites ready, including organization details, IdP credentials, and cloud provider access. Plan for 1–2 hours if you need to gather information during the wizard.
+
+  </Expandable>
+
+  <Expandable title="Can multiple admins run the wizard simultaneously?">
+
+  No, only one admin session can run the setup wizard at a time. Coordinate with your team before starting.
+
+  </Expandable>
+
+  <Expandable title="I lost my internet connection during setup. Do I need to restart?">
+
+  No, the wizard saves progress at each step. Log back in and resume from the last completed section.
+
+  </Expandable>
+</ExpandableGroup>
+
+## Need Help?
+
+Refer to our [Integrations Overview](/integrations/overview) for step-by-step instructions on connecting your tech stack. Email support@complyhub.com for technical issues, or contact your CSM for guidance on your compliance journey. You can also visit the [Help Center](/help-center).

@@ -1,0 +1,251 @@
+---
+title: "Integrations Overview"
+description: "Connect cloud providers, identity providers, MDM, HRIS, and monitoring tools to automate evidence collection in ComplyHub."
+---
+
+## Integrations overview
+
+ComplyHub integrates with the tools you already use to automate evidence collection and maintain continuous compliance. Connect your cloud infrastructure, identity providers, and HR systems to keep your compliance data current without manual effort.
+
+<Callout kind="info" title="Who can use this feature">
+
+Integration management requires the Admin role. Integrations are available on all plans, though some premium integrations are exclusive to Growth and Scale plans.
+
+</Callout>
+
+## Integration categories
+
+<Columns cols={3}>
+
+<Card title="Cloud Providers" href="#cloud-providers" icon="cloud">
+
+AWS, Google Cloud Platform, and Microsoft Azure.
+
+</Card>
+
+<Card title="Identity Providers" href="#identity-providers" icon="users">
+
+Okta, Google Workspace, and Microsoft Entra ID.
+
+</Card>
+
+<Card title="MDM Tools" href="#mdm-tools" icon="smartphone">
+
+Jamf, Microsoft Intune, and Kandji.
+
+</Card>
+
+<Card title="HRIS Systems" href="#hris-tools" icon="briefcase">
+
+BambooHR, Workday, and Rippling.
+
+</Card>
+
+<Card title="Ticketing Systems" href="#ticketing-systems" icon="ticket">
+
+Jira, ServiceNow, and Zendesk.
+
+</Card>
+
+<Card title="Monitoring Tools" href="#monitoring-tools" icon="activity">
+
+Datadog, Splunk, and AWS Security Hub.
+
+</Card>
+
+</Columns>
+
+## Cloud providers
+
+Cloud provider integrations collect infrastructure and access configuration evidence from AWS, Google Cloud Platform, and Microsoft Azure.
+
+**Evidence collected:**
+
+- CloudTrail logs
+- IAM configurations
+- Security group rules
+- S3 bucket policies
+
+**Connection type:** Read-only IAM role with specific permissions.
+
+<Callout kind="alert" title="Note:">
+
+Cloud provider integrations require a read-only IAM role. ComplyHub never modifies your infrastructure. Review the required permissions on the integration setup page before connecting.
+
+</Callout>
+
+## Identity providers
+
+Identity provider integrations help ComplyHub monitor user access, authentication controls, and single sign-on configuration.
+
+**Evidence collected:**
+
+- User lists
+- MFA enrollment status
+- Access reviews
+- SSO configurations
+
+**Supported providers:**
+
+- Okta through SCIM or OAuth
+- Google Workspace through the Admin SDK
+- Microsoft Entra ID through the Graph API
+
+**Connection type:** OAuth 2.0 or an API key with admin-scoped read permissions.
+
+## MDM tools
+
+MDM integrations collect device and endpoint evidence from Jamf Pro, Microsoft Intune, and Kandji.
+
+**Evidence collected:**
+
+- Device compliance status
+- Encryption status
+- Operating system versions
+- Enforcement policies
+
+**Supported tools:** Jamf Pro, Microsoft Intune, and Kandji.
+
+**Connection type:** API token with read access.
+
+## HRIS tools
+
+HRIS integrations provide workforce data for access reviews and employee lifecycle evidence.
+
+**Evidence collected:**
+
+- Employee lists
+- Hire and termination dates
+- Department assignments for access review evidence
+
+**Supported tools:** BambooHR, Workday, and Rippling.
+
+**Connection type:** API key with read access.
+
+<Callout kind="tip" title="Pro Tip!">
+
+Connect your HRIS tool before running access reviews. ComplyHub cross-references active employees in your HRIS with users in your identity provider to flag orphaned accounts automatically.
+
+</Callout>
+
+## Ticketing systems
+
+Ticketing integrations connect Jira, ServiceNow, and Zendesk to evidence workflows that rely on issue and remediation records.
+
+## Monitoring tools
+
+Monitoring integrations connect Datadog, Splunk, and AWS Security Hub to collect security monitoring evidence.
+
+## Connecting a tool
+
+Use the following workflow to connect a provider and start collecting evidence.
+
+<Steps>
+
+<Step title="Open integrations" icon="plug">
+
+Navigate to `Integrations > Add Integration`.
+
+</Step>
+
+<Step title="Select the tool" icon="list">
+
+Choose the tool category and the specific provider you want to connect.
+
+</Step>
+
+<Step title="Authenticate" icon="key">
+
+Follow the provider-specific authentication steps. Depending on the tool, authentication uses OAuth, an API key, or an IAM role.
+
+</Step>
+
+<Step title="Configure scope" icon="settings">
+
+Select the evidence ComplyHub should collect from the tool.
+
+</Step>
+
+<Step title="Set frequency" icon="clock">
+
+Choose a collection frequency: daily, hourly, or real-time where supported.
+
+</Step>
+
+<Step title="Test the connection" icon="check-circle">
+
+Verify that the connection works before saving it.
+
+</Step>
+
+<Step title="Verify evidence flow" icon="check">
+
+Open the Task Center and confirm that ComplyHub is collecting evidence from the connected tool.
+
+</Step>
+
+</Steps>
+
+<Callout kind="alert" title="Note:">
+
+Each integration requires specific permissions. Review the permission requirements on the integration setup page before connecting. ComplyHub uses least-privilege access wherever possible.
+
+</Callout>
+
+<Callout kind="tip" title="Pro Tip!">
+
+For multi-account cloud setups, such as multiple AWS accounts, connect each account separately. ComplyHub aggregates evidence across accounts in the unified dashboard.
+
+</Callout>
+
+## Integration health
+
+Monitor integration status from the Integrations dashboard. Health indicators show the current state of each connection:
+
+- **Connected:** The integration is operating normally.
+- **Warning:** A token is expiring soon or requires attention.
+- **Error:** The connection failed and evidence collection has stopped.
+
+ComplyHub proactively alerts you 7 days before a token or API key expires.
+
+<Callout kind="alert" title="Note:">
+
+Failed integrations pause evidence collection for that source. Address integration errors promptly to avoid gaps in your readiness score.
+
+</Callout>
+
+## FAQs
+
+<ExpandableGroup>
+
+<Expandable title="What if my tool isn't listed?">
+
+Contact [support@complyhub.com](mailto:support@complyhub.com). ComplyHub regularly adds new integrations and may support your tool through custom API configuration.
+
+</Expandable>
+
+<Expandable title="Can I connect multiple instances of the same tool?">
+
+Yes. Connect multiple AWS accounts, Okta tenants, or instances of another supported tool. ComplyHub manages each connection separately and aggregates the evidence in the unified dashboard.
+
+</Expandable>
+
+<Expandable title="How often is evidence collected?">
+
+Most integrations collect evidence daily. Cloud providers and identity providers support hourly collection on Growth and Scale plans.
+
+</Expandable>
+
+<Expandable title="Is my data secure?">
+
+Yes. All integrations use encrypted connections with TLS 1.2 or later. ComplyHub stores evidence with AES-256 encryption and is SOC 2 Type II certified.
+
+</Expandable>
+
+</ExpandableGroup>
+
+## Need help?
+
+Email [support@complyhub.com](mailto:support@complyhub.com), contact your Customer Success Manager, or visit the [Help Center](/help-center).
+
+For related guidance, see [Frameworks and Controls](/compliance/frameworks), [Audit Readiness](/compliance/audit-readiness), and the [Quick Start Guide](/quickstart).
