@@ -18,12 +18,12 @@
             "group": "Stackflo Overview",
             "pages": [
               {
-                "title": "Dashboard Overview",
-                "path": "dashboard-overviews"
-              },
-              {
                 "title": "Introduction",
                 "path": "stackflo-introduction"
+              },
+              {
+                "title": "Dashboard Overview",
+                "path": "dashboard-overviews"
               }
             ]
           },
