@@ -52,6 +52,10 @@
                   {
                     "title": "Risk Management Overview",
                     "path": "risk-management-overview"
+                  },
+                  {
+                    "title": "Risk Register",
+                    "path": "risk-register"
                   }
                 ]
               }
