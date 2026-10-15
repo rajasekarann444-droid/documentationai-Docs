@@ -1,20 +1,161 @@
 ---
-title: Create Your First Doc Page
-description: A short guide to adding a new page to this starter kit.
+title: Stakflo Setup Guide
+description: Complete your initial Stakflo workspace setup, connect integrations, and select compliance frameworks to get started.
 ---
-## Overview
 
-Use this guide as a sample for your real setup instructions.
+## Set up your Stakflo workspace
 
-## Steps
+This guide walks through the essential setup steps to get your Stakflo workspace ready for compliance management.
+
+## Prerequisites
+
+<Callout kind="info">
+
+- You have a Stakflo account. If you do not have one, contact your administrator or email support@stakflo.com.
+- You have admin or workspace owner permissions.
+- You have credentials for the integrations you plan to connect, such as AWS, Okta, or GitHub.
+- For login instructions, see [Introduction](/introduction).
+
+</Callout>
+
+## Step 1: Set up your workspace
 
 <Steps>
-  <Step title="Create a new file" icon="file-plus" title-type="p">
-    Add a page using + and start with a title and short description.
+  <Step title="Log in to Stakflo" icon="log-in" title-type="p">
+
+Navigate to the platform and sign in with your credentials or SSO. See [Introduction](/introduction).
+
   </Step>
 
-  <Step title="Write the first section" icon="edit" title-type="p">
-    Add a simple header and a few sentences users can scan quickly.
+  <Step title="Complete the setup wizard" icon="zap" title-type="p">
+
+Follow the onboarding wizard to configure your workspace name, team members, and organization details. See [Quickstart](/quickstart).
+
+  </Step>
+
+  <Step title="Complete onboarding tasks" icon="check-square" title-type="p">
+
+Finish any remaining onboarding checklist items from the dashboard. See [Concepts](/concepts).
+
+  </Step>
+
+  <Step title="Review your dashboard" icon="layout-dashboard" title-type="p">
+
+Familiarize yourself with the Stakflo dashboard layout and widgets. See [Dashboard overviews](/dashboard-overviews).
+
   </Step>
 </Steps>
 
+<Callout kind="tip">
+
+Your workspace is ready when the onboarding checklist shows all tasks complete and your dashboard displays compliance status widgets.
+
+</Callout>
+
+## Step 2: Connect integrations
+
+<Steps>
+  <Step title="Navigate to Integrations" icon="plug" title-type="p">
+
+Go to the Integrations page from the sidebar. See [Integrations overview](/integrations/overview).
+
+  </Step>
+
+  <Step title="Select an integration" icon="list" title-type="p">
+
+Choose from available integrations such as AWS, GCP, Azure, Okta, or Google Workspace.
+
+  </Step>
+
+  <Step title="Authenticate" icon="key" title-type="p">
+
+Enter the required credentials, such as an API key, OAuth token, or service account, and authorize the connection.
+
+  </Step>
+
+  <Step title="Verify the connection" icon="check-circle" title-type="p">
+
+Confirm the integration shows as Connected and that data begins syncing.
+
+  </Step>
+
+  <Step title="Repeat for additional integrations" icon="repeat" title-type="p">
+
+Connect all relevant data sources for comprehensive evidence collection.
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+Integrations are successfully connected when each shows a green Connected status on the Integrations page.
+
+</Callout>
+
+## Step 3: Select compliance frameworks
+
+<Steps>
+  <Step title="Navigate to Frameworks" icon="shield" title-type="p">
+
+Go to the Frameworks page from the sidebar. See [Frameworks](/frameworks).
+
+  </Step>
+
+  <Step title="Choose a framework" icon="list" title-type="p">
+
+Select from supported frameworks such as SOC 2 Type II, ISO 27001, GDPR, or HIPAA.
+
+  </Step>
+
+  <Step title="Review framework requirements" icon="eye" title-type="p">
+
+Examine the controls and requirements associated with your selected framework.
+
+  </Step>
+
+  <Step title="Map unified controls" icon="git-branch" title-type="p">
+
+Use the Unified Controls feature to map overlapping requirements across multiple frameworks. See [Unified Controls](/unified-controls).
+
+  </Step>
+
+  <Step title="Configure policies" icon="file-text" title-type="p">
+
+Set up or import the policies required by your selected framework. See [Policies](/policies).
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+Your framework is active when its controls appear on your dashboard with completion status indicators.
+
+</Callout>
+
+## Next steps
+
+<Columns cols={2}>
+  <Card title="Collect Evidence" href="/evidence" icon="folder-check">
+
+Start automating evidence collection for your controls.
+
+  </Card>
+
+  <Card title="Manage Risks" href="/risk-management-overview" icon="alert-triangle">
+
+Identify and track risks in your risk register.
+
+  </Card>
+
+  <Card title="Third-Party Risk" href="/tprm-overview" icon="users">
+
+Set up third-party vendor assessments.
+
+  </Card>
+
+  <Card title="FAQ" href="/help-center/faq/getting-started" icon="help-circle">
+
+Find answers to common questions.
+
+  </Card>
+</Columns>

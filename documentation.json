@@ -1,5 +1,5 @@
 {
-  "name": "ComplyHub Help Center",
+  "name": "Stakflo Help Center",
   "colors": {
     "light": {
       "brand": "#4F46E5"
@@ -15,7 +15,7 @@
         "icon": "rocket",
         "groups": [
           {
-            "group": "Stackflo Overview",
+            "group": "Welcome",
             "pages": [
               {
                 "title": "Introduction",
@@ -24,57 +24,6 @@
               {
                 "title": "Dashboard Overview",
                 "path": "dashboard-overviews"
-              },
-              {
-                "group": "Compliance Management",
-                "pages": [
-                  {
-                    "title": "Frameworks",
-                    "path": "frameworks"
-                  },
-                  {
-                    "title": "Unified Controls",
-                    "path": "unified-controls"
-                  },
-                  {
-                    "title": "Policies",
-                    "path": "policies"
-                  },
-                  {
-                    "title": "Evidence",
-                    "path": "evidence"
-                  }
-                ]
-              },
-              {
-                "group": "Risk Management",
-                "pages": [
-                  {
-                    "title": "Risk Management Overview",
-                    "path": "risk-management-overview"
-                  },
-                  {
-                    "title": "Risk Register",
-                    "path": "risk-register"
-                  },
-                  {
-                    "title": "Risk Library",
-                    "path": "risk-library"
-                  }
-                ]
-              },
-              {
-                "group": "Third-Party Risk Management",
-                "pages": [
-                  {
-                    "title": "Overview",
-                    "path": "tprm-overview"
-                  },
-                  {
-                    "title": "Inventory",
-                    "path": "inventory"
-                  }
-                ]
               }
             ]
           },
@@ -83,7 +32,7 @@
             "icon": "play",
             "pages": [
               {
-                "title": "Log In to ComplyHub",
+                "title": "Log In to Stakflo",
                 "path": "introduction",
                 "icon": "log-in"
               },
@@ -104,7 +53,7 @@
             "icon": "compass",
             "pages": [
               {
-                "title": "Getting Around ComplyHub",
+                "title": "Getting Around Stakflo",
                 "path": "components",
                 "icon": "layout"
               },
@@ -129,17 +78,25 @@
                 "title": "Frameworks & Controls",
                 "path": "compliance/frameworks",
                 "icon": "shield"
+              },
+              {
+                "title": "Unified Controls",
+                "path": "unified-controls"
               }
             ]
           },
           {
-            "group": "Policies",
+            "group": "Policies & Evidence",
             "icon": "file-text",
             "pages": [
               {
                 "title": "Policies",
                 "path": "compliance/policies",
                 "icon": "file-text"
+              },
+              {
+                "title": "Evidence",
+                "path": "evidence"
               }
             ]
           },
@@ -151,6 +108,42 @@
                 "title": "Audit Readiness",
                 "path": "compliance/audit-readiness",
                 "icon": "clipboard-check"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Risk Management",
+        "icon": "shield-alert",
+        "groups": [
+          {
+            "group": "Risk Management",
+            "pages": [
+              {
+                "title": "Risk Management Overview",
+                "path": "risk-management-overview"
+              },
+              {
+                "title": "Risk Register",
+                "path": "risk-register"
+              },
+              {
+                "title": "Risk Library",
+                "path": "risk-library"
+              }
+            ]
+          },
+          {
+            "group": "Third-Party Risk Management",
+            "pages": [
+              {
+                "title": "TPRM Overview",
+                "path": "tprm-overview"
+              },
+              {
+                "title": "Vendor Inventory",
+                "path": "inventory"
               }
             ]
           }
@@ -214,17 +207,17 @@
                 "path": "help-center/guides/setup-project"
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Product Updates",
-        "icon": "clock",
-        "pages": [
+          },
           {
-            "title": "Product Updates",
-            "path": "changelog",
-            "icon": "history"
+            "group": "Product Updates",
+            "icon": "clock",
+            "pages": [
+              {
+                "title": "Product Updates",
+                "path": "changelog",
+                "icon": "history"
+              }
+            ]
           }
         ]
       }

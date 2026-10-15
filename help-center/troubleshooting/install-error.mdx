@@ -1,26 +1,144 @@
 ---
-title: Page Missing in Sidebar
-description: Fix a page that does not appear in navigation.
+title: Troubleshooting Common Issues
+description: Solutions for common Stakflo issues including integration failures, evidence collection problems, and dashboard display errors.
 ---
-## Symptoms
 
-- A new page file exists but does not show up in the sidebar.
+## Common Stakflo issues
 
-- Clicking a nav item shows a 404.
+Use this page to resolve integration connection failures, evidence collection problems, and dashboard display errors.
 
-## Fix
+## Integration Connection Failures
+
+Integrations may show as disconnected or display sync errors when credentials expire or network access is blocked.
+
+<Callout kind="alert">
+
+Expired or revoked credentials are the most common cause of integration failures.
+
+</Callout>
 
 <Steps>
-  <Step title="Confirm the file name" icon="file-text" title-type="p">
-    Ensure the file exists.
+  <Step title="Verify credentials" icon="key" title-type="p">
+
+  Check that API keys and tokens in the source system have not expired or been revoked.
+
   </Step>
 
-  <Step title="Update navigation" icon="settings" title-type="p">
-    Add or fix the matching `path` in `documentation.json` or from navigation menu.
+  <Step title="Check network access" icon="globe" title-type="p">
+
+  Ensure Stakflo can reach the integration endpoint. Verify that firewall rules and proxy settings allow outbound connections.
+
   </Step>
 
-  <Step title="Publish" icon="refresh-cw" title-type="p">
-    Publish so changes take effect.
+  <Step title="Re-authenticate" icon="refresh-cw" title-type="p">
+
+  Disconnect and reconnect the integration from the Integrations page. See [connection steps](/integrations/overview).
+
+  </Step>
+
+  <Step title="Review error logs" icon="file-text" title-type="p">
+
+  Open the integration's error log in Stakflo and review the error messages that identify the root cause.
+
+  </Step>
+
+  <Step title="Contact support" icon="mail" title-type="p">
+
+  If the issue persists, email support@stakflo.com with the error message and integration name.
+
   </Step>
 </Steps>
 
+## Evidence Collection Issues
+
+Evidence may fail to collect automatically or show as stale when permissions are insufficient or schedules are misconfigured.
+
+<Callout kind="alert">
+
+Insufficient permission scopes are frequently the root cause of evidence collection failures.
+
+</Callout>
+
+<Steps>
+  <Step title="Verify permissions" icon="key" title-type="p">
+
+  Ensure the connected integration has the required read scopes for the evidence sources it needs to access.
+
+  </Step>
+
+  <Step title="Check evidence schedule" icon="clock" title-type="p">
+
+  Confirm that automated collection is enabled and the collection schedule is active.
+
+  </Step>
+
+  <Step title="Manually trigger collection" icon="play" title-type="p">
+
+  Use the `Collect Now` button on the Evidence page to trigger an immediate collection. See [Evidence](/evidence).
+
+  </Step>
+
+  <Step title="Review evidence source" icon="search" title-type="p">
+
+  Confirm that the source system contains the expected data and matches the evidence type being collected.
+
+  </Step>
+
+  <Step title="Contact support" icon="mail" title-type="p">
+
+  Email support@stakflo.com if evidence still fails to collect after you verify permissions and schedules.
+
+  </Step>
+</Steps>
+
+## Dashboard Display Problems
+
+The dashboard may show incomplete data or fail to load widgets when filters exclude data or integrations are disconnected.
+
+<Callout kind="info">
+
+Dashboard data may take up to 15 minutes to refresh after you make changes.
+
+</Callout>
+
+<Steps>
+  <Step title="Refresh the page" icon="refresh-cw" title-type="p">
+
+  Clear your browser cache and reload the dashboard. See [Dashboard overviews](/dashboard-overviews).
+
+  </Step>
+
+  <Step title="Check filter settings" icon="filter" title-type="p">
+
+  Verify that no framework or date filters exclude the data you expect to see.
+
+  </Step>
+
+  <Step title="Verify data sources" icon="database" title-type="p">
+
+  Confirm that integrations are connected and actively syncing. See [Integrations](/integrations/overview).
+
+  </Step>
+
+  <Step title="Check framework selection" icon="shield" title-type="p">
+
+  Ensure that the correct compliance framework is active and enabled. See [Frameworks](/frameworks).
+
+  </Step>
+
+  <Step title="Contact support" icon="mail" title-type="p">
+
+  Email support@stakflo.com with a screenshot if the issue persists.
+
+  </Step>
+</Steps>
+
+## Still Need Help?
+
+If these steps do not resolve the problem, contact Stakflo support with the affected integration or page, the steps you tried, and any relevant error messages.
+
+<Callout kind="tip">
+
+Email support@stakflo.com for further assistance, or check the [FAQ](/help-center/faq/getting-started).
+
+</Callout>

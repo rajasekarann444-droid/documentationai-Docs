@@ -1,14 +1,13 @@
 ---
-title: "Quick Start Guide: Setup Wizard"
-description: "Walk through the ComplyHub setup wizard to configure your organization, policies, employees, and tool integrations for compliance automation."
+title: 'Quick Start Guide: Setup Wizard'
+description: >-
+  Walk through the Stakflo setup wizard to configure your organization,
+  policies, employees, and tool integrations for compliance automation.
 ---
+Welcome to Stakflo! This guide walks you through the four-section setup wizard so you can start automating compliance from day one. The wizard launches automatically the first time you log in as an admin.
 
-Welcome to ComplyHub! This guide walks you through the four-section setup wizard so you can start automating compliance from day one. The wizard launches automatically the first time you log in as an admin.
-
-<Callout kind="info" title="Who can use this feature">
-
-Supported on Foundation, Growth, and Scale plans. Admin access is required to run the setup wizard.
-
+<Callout kind="info" collapsed="false">
+  Supported on Foundation, Growth, and Scale plans. Admin access is required to run the setup wizard.
 </Callout>
 
 ## Getting Started
@@ -24,7 +23,7 @@ Let's walk through each section.
 
 ## Section 1: Prerequisite Information
 
-This section ensures your organization's essential details are properly configured across all ComplyHub modules.
+This section ensures your organization's essential details are properly configured across all Stakflo modules.
 
 ### 1: Add your organization details
 
@@ -32,31 +31,27 @@ Enter your company name, industry, organization size, and compliance goals. This
 
 ### 2: Connect your identity provider
 
-Integrate with your identity provider to sync employee data and enforce access controls. ComplyHub supports Okta, Google Workspace, Microsoft Entra ID, OneLogin, JumpCloud, and custom SAML 2.0 providers.
+Integrate with your identity provider to sync employee data and enforce access controls. Stakflo supports Okta, Google Workspace, Microsoft Entra ID, OneLogin, JumpCloud, and custom SAML 2.0 providers.
 
 ### 3: Assign department owners
 
 Assign a teammate as the owner for each department. Owners are responsible for managing controls and evidence within their department. You can assign the same person to multiple departments, but each department requires exactly one owner.
 
-<Callout kind="alert" title="Note:">
-
-Department owners must be assigned before evidence collection can begin. This is a mandatory step. Without owners, control evidence cannot be routed for review and your readiness score will remain incomplete.
-
+<Callout kind="alert" collapsed="false">
+  Department owners must be assigned before evidence collection can begin. This is a mandatory step. Without owners, control evidence cannot be routed for review and your readiness score will remain incomplete.
 </Callout>
 
 ### 4: Connect your cloud providers
 
 Integrate with AWS, GCP, or Azure to enable automated cloud security scans. These scans generate evidence for compliance with regulatory standards and help maintain a secure infrastructure.
 
-<Callout kind="alert" title="Note:">
-
-Connecting at least one cloud provider is mandatory for ComplyHub to run automated evidence collection on your cloud infrastructure.
-
+<Callout kind="alert" collapsed="false">
+  Connecting at least one cloud provider is mandatory for Stakflo to run automated evidence collection on your cloud infrastructure.
 </Callout>
 
 ### 5: Schedule internal audits
 
-Set tentative internal audit dates for each framework. ComplyHub recommends scheduling the first audit 4–6 weeks after your kick-off, once policies and evidence are in place. You can adjust dates later in the Audit Center.
+Set tentative internal audit dates for each framework. Stakflo recommends scheduling the first audit 4–6 weeks after your kick-off, once policies and evidence are in place. You can adjust dates later in the Audit Center.
 
 ## Section 2: Policy Setup
 
@@ -80,21 +75,19 @@ Configure the tools and processes that manage your employee lifecycle and ensure
 
 ### 1: Configure your MDM tool
 
-Connect your Mobile Device Management tool to collect device compliance evidence. ComplyHub supports Jamf Pro, Microsoft Intune, Kandji, JumpCloud, Fleet, and NinjaOne. If you do not have an MDM tool, you can use ComplyHub Agent as a lightweight alternative.
+Connect your Mobile Device Management tool to collect device compliance evidence. Stakflo supports Jamf Pro, Microsoft Intune, Kandji, JumpCloud, Fleet, and NinjaOne. If you do not have an MDM tool, you can use Stakflo Agent as a lightweight alternative.
 
-<Callout kind="tip" title="Pro Tip!">
-
-Connect your MDM tool early to start collecting device compliance evidence from day one. The longer your data history, the stronger your audit posture.
-
+<Callout kind="tip" collapsed="false">
+  Connect your MDM tool early to start collecting device compliance evidence from day one. The longer your data history, the stronger your audit posture.
 </Callout>
 
 ### 2: Configure your BGV tool
 
-Connect your background verification tool to automate candidate screening. ComplyHub supports Certn, SpringVerify, and Checkr. Choose whether to run checks for all employees or only those hired after a specific date.
+Connect your background verification tool to automate candidate screening. Stakflo supports Certn, SpringVerify, and Checkr. Choose whether to run checks for all employees or only those hired after a specific date.
 
 ### 3: Select training modules
 
-Choose security training programs based on your compliance requirements. ComplyHub offers training for HIPAA, GDPR, ISO 27001, and ISO 9001. Set start and end dates, and employees will access training through the Employee Portal.
+Choose security training programs based on your compliance requirements. Stakflo offers training for HIPAA, GDPR, ISO 27001, and ISO 9001. Set start and end dates, and employees will access training through the Employee Portal.
 
 ### 4: Select employee policies
 
@@ -102,50 +95,38 @@ Choose which published policies employees must acknowledge. These are added to t
 
 ## Section 4: Tool Integrations
 
-Connect your tech stack to automate evidence collection across your organization. ComplyHub supports integrations across 15+ tool categories, including version control, project management, HRIS, vulnerability scanners, incident management, and communication tools.
+Connect your tech stack to automate evidence collection across your organization. Stakflo supports integrations across 15+ tool categories, including version control, project management, HRIS, vulnerability scanners, incident management, and communication tools.
 
 You can integrate tools now or add them later via the Integrations module. For detailed guidance on connecting specific tools, see the [Integrations Overview](/integrations/overview).
 
-<Callout kind="alert" title="Note:">
-
-You can integrate any number of tools. If you prefer, skip this section for now and add integrations later. The wizard saves your progress.
-
+<Callout kind="alert" collapsed="false">
+  You can integrate any number of tools. If you prefer, skip this section for now and add integrations later. The wizard saves your progress.
 </Callout>
 
 ## FAQs & Troubleshooting
 
 <ExpandableGroup>
-  <Expandable title="Can I skip a section and come back later?">
-
-  Yes, the wizard saves your progress automatically. Resume from where you left off by navigating to the Task Center.
-
+  <Expandable title="Can I skip a section and come back later?" default-open="false">
+    Yes, the wizard saves your progress automatically. Resume from where you left off by navigating to the Task Center.
   </Expandable>
 
-  <Expandable title="What if my identity provider isn't listed?">
-
-  Contact support@complyhub.com for custom SAML 2.0 configuration. Most providers supporting SAML 2.0 or OIDC can be integrated.
-
+  <Expandable title="What if my identity provider isn't listed?" default-open="false">
+    Contact [support@stakflo.com](mailto:support@stakflo.com) for custom SAML 2.0 configuration. Most providers supporting SAML 2.0 or OIDC can be integrated.
   </Expandable>
 
-  <Expandable title="How long does setup typically take?">
-
-  Setup takes 30–45 minutes if you have all prerequisites ready, including organization details, IdP credentials, and cloud provider access. Plan for 1–2 hours if you need to gather information during the wizard.
-
+  <Expandable title="How long does setup typically take?" default-open="false">
+    Setup takes 30–45 minutes if you have all prerequisites ready, including organization details, IdP credentials, and cloud provider access. Plan for 1–2 hours if you need to gather information during the wizard.
   </Expandable>
 
-  <Expandable title="Can multiple admins run the wizard simultaneously?">
-
-  No, only one admin session can run the setup wizard at a time. Coordinate with your team before starting.
-
+  <Expandable title="Can multiple admins run the wizard simultaneously?" default-open="false">
+    No, only one admin session can run the setup wizard at a time. Coordinate with your team before starting.
   </Expandable>
 
-  <Expandable title="I lost my internet connection during setup. Do I need to restart?">
-
-  No, the wizard saves progress at each step. Log back in and resume from the last completed section.
-
+  <Expandable title="I lost my internet connection during setup. Do I need to restart?" default-open="false">
+    No, the wizard saves progress at each step. Log back in and resume from the last completed section.
   </Expandable>
 </ExpandableGroup>
 
 ## Need Help?
 
-Refer to our [Integrations Overview](/integrations/overview) for step-by-step instructions on connecting your tech stack. Email support@complyhub.com for technical issues, or contact your CSM for guidance on your compliance journey. You can also visit the [Help Center](/help-center).
+Refer to our [Integrations Overview](/integrations/overview) for step-by-step instructions on connecting your tech stack. Email [support@stakflo.com](mailto:support@stakflo.com) for technical issues, or contact your CSM for guidance on your compliance journey. You can also visit the [Help Center](/help-center).
