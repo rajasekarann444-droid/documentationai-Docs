@@ -67,12 +67,12 @@
                 "group": "Third-Party Risk Management",
                 "pages": [
                   {
-                    "title": "Inventory",
-                    "path": "inventory"
-                  },
-                  {
                     "title": "Overview",
                     "path": "tprm-overview"
+                  },
+                  {
+                    "title": "Inventory",
+                    "path": "inventory"
                   }
                 ]
               }
