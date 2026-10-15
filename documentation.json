@@ -29,16 +29,20 @@
                 "group": "Compliance Management",
                 "pages": [
                   {
-                    "title": "Policies",
-                    "path": "policies"
-                  },
-                  {
                     "title": "frameworks",
                     "path": "frameworks"
                   },
                   {
                     "title": "Unified Controls",
                     "path": "unified-controls"
+                  },
+                  {
+                    "title": "Policies",
+                    "path": "policies"
+                  },
+                  {
+                    "title": "Evidence",
+                    "path": "evidence"
                   }
                 ]
               }
