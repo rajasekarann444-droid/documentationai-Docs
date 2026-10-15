@@ -24,6 +24,15 @@
               {
                 "title": "Dashboard Overview",
                 "path": "dashboard-overviews"
+              },
+              {
+                "group": "Compliance Management",
+                "pages": [
+                  {
+                    "title": "frameworks",
+                    "path": "frameworks"
+                  }
+                ]
               }
             ]
           },
