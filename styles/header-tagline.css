@@ -1,31 +1,32 @@
-/* Stakflo header tagline — injects "Compliance Automated" as a secondary text
-   element beside/below the brand name in the site header.
+/* Stakflo header tagline — injects "Compliance Automated" as a secondary
+   text line beneath the "Stakflo" brand name in the site header.
+   Uses documented Documentation.AI class selectors: .dai-logo, .dai-navbar.
    Uses currentColor + opacity for automatic light/dark theme adaptation. */
 
-/* Target common brand/logo link elements inside the site header. */
-header [class*="logo"] a,
-header [class*="brand"] a,
-[class*="header"] [class*="logo"] a,
-[class*="header"] [class*="brand"] a,
-[class*="navbar"] [class*="logo"] a,
-[class*="navbar"] [class*="brand"] a {
-  display: inline-block;
+/* Ensure the logo area uses flexbox so logo + text + tagline stack correctly. */
+.dai-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* The site name text lives inside a link within .dai-logo.
+   Make it a flex column so the brand name and tagline stack vertically. */
+.dai-logo a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.1;
 }
 
 /* Append the tagline as a smaller, muted line beneath the brand name. */
-header [class*="logo"] a::after,
-header [class*="brand"] a::after,
-[class*="header"] [class*="logo"] a::after,
-[class*="header"] [class*="brand"] a::after,
-[class*="navbar"] [class*="logo"] a::after,
-[class*="navbar"] [class*="brand"] a::after {
+.dai-logo a::after {
   content: "Compliance Automated";
-  display: block;
-  font-size: 0.65em;
+  font-size: 0.6em;
   font-weight: 400;
   line-height: 1.2;
-  margin-top: 0.15em;
+  margin-top: 0.1em;
   color: currentColor;
-  opacity: 0.65;
+  opacity: 0.6;
   white-space: nowrap;
 }
