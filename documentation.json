@@ -1,7 +1,10 @@
 {
-  "name": "Stakflo",
+  "name": "Stakflo — Compliance Automated",
   "tagline": "Compliance Automated",
-  "logo": "https://blob-cdn.documentation.ai/org-eebb0ffa-5837-4323-ba46-75da413866bf/doc-cf03db34-2b0f-4475-8759-f7336cd28535/1792153251068-gaijj0snvyu-Stakflo.png?fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-eebb0ffa-5837-4323-ba46-75da413866bf/doc-cf03db34-2b0f-4475-8759-f7336cd28535/1792153251068-gaijj0snvyu-Stakflo.png?fm=auto&auto=compress%2Cformat",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-eebb0ffa-5837-4323-ba46-75da413866bf/doc-cf03db34-2b0f-4475-8759-f7336cd28535/1792153251068-gaijj0snvyu-Stakflo.png?fm=auto&auto=compress%2Cformat",
+  "logo-small-light": "https://blob-cdn.documentation.ai/org-eebb0ffa-5837-4323-ba46-75da413866bf/doc-cf03db34-2b0f-4475-8759-f7336cd28535/1792153251068-gaijj0snvyu-Stakflo.png?fm=auto&auto=compress%2Cformat",
+  "logo-small-dark": "https://blob-cdn.documentation.ai/org-eebb0ffa-5837-4323-ba46-75da413866bf/doc-cf03db34-2b0f-4475-8759-f7336cd28535/1792153251068-gaijj0snvyu-Stakflo.png?fm=auto&auto=compress%2Cformat",
   "colors": {
     "light": {
       "brand": "#4F46E5"
