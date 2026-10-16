@@ -1,5 +1,7 @@
 {
-  "name": "Stakflo Help Center",
+  "name": "Stakflo",
+  "tagline": "Compliance Automated",
+  "logo": "https://blob-cdn.documentation.ai/org-eebb0ffa-5837-4323-ba46-75da413866bf/doc-cf03db34-2b0f-4475-8759-f7336cd28535/1792153251068-gaijj0snvyu-Stakflo.png?fm=auto&auto=compress%2Cformat",
   "colors": {
     "light": {
       "brand": "#4F46E5"
@@ -12,7 +14,7 @@
     "tabs": [
       {
         "icon": "book-open",
-        "tab": "Stakflo Help Center",
+        "tab": "Stakflo",
         "groups": [
           {
             "group": "Getting Started",
