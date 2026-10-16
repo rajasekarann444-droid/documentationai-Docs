@@ -7,6 +7,9 @@
   "customCss": [
     { "src": "styles/header-tagline.css" }
   ],
+  "scripts": [
+    { "src": "scripts/header-tagline.js" }
+  ],
   "colors": {
     "light": {
       "brand": "#4F46E5"

@@ -1,28 +1,30 @@
-/* Stakflo header tagline — injects "Compliance Automated" as a secondary
-   text line beneath the "Stakflo" brand name in the site header.
-   Uses documented Documentation.AI class selectors: .dai-logo, .dai-navbar.
-   Uses currentColor + opacity for automatic light/dark theme adaptation. */
+/* Stakflo header tagline — styles the JavaScript-injected tagline element
+   that appears beneath the "Stakflo" brand name in the site header.
+   The DOM manipulation is handled by scripts/header-tagline.js.
+   This CSS provides the visual styling for the injected elements. */
 
-/* Ensure the logo area uses flexbox so logo + text + tagline stack correctly. */
+/* The .dai-logo container holds the logo image and brand text horizontally.
+   The JS script sets inline flex styles, but these ensure the layout holds
+   even if inline styles are stripped during re-render. */
 .dai-logo {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 0.5rem;
 }
 
-/* The site name text lives inside a link within .dai-logo.
-   Make it a flex column so the brand name and tagline stack vertically. */
-.dai-logo a {
+/* Brand text container — holds "Stakflo" and the tagline in a vertical stack
+   to the right of the logo image. */
+.stakflo-brand-text {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
   line-height: 1.1;
 }
 
-/* Append the tagline as a smaller, muted line beneath the brand name. */
-.dai-logo a::after {
-  content: "Compliance Automated";
-  font-size: 0.6em;
+/* Tagline — smaller, muted secondary text beneath "Stakflo".
+   Uses currentColor + opacity for automatic light/dark theme adaptation. */
+.stakflo-tagline {
+  font-size: 0.65em;
   font-weight: 400;
   line-height: 1.2;
   margin-top: 0.1em;
