@@ -1,14 +1,13 @@
 ---
-title: Account, Access & Support
-description: Manage user roles, configure SSO, invite team members, and access support resources for your Stakflo account.
+title: 'Account, Access & Support'
+description: >-
+  Manage user roles, configure SSO, invite team members, and access support
+  resources for your Stakflo account.
 ---
-
 Manage your team's access to Stakflo, configure single sign-on, and know where to turn when you need help. This page covers roles, SSO setup, team management, and support options.
 
-<Callout kind="info" title="Who can use this feature">
-
-Account management requires Admin role. SSO configuration is available on Growth and Scale plans.
-
+<Callout kind="info" collapsed="false">
+  Account management requires Admin role. SSO configuration is available on Growth and Scale plans.
 </Callout>
 
 ## User Roles & Permissions
@@ -20,10 +19,8 @@ Stakflo uses role-based access control to ensure team members see only what they
 - **Contributor**: Upload evidence, complete assigned tasks, and view assigned controls
 - **Viewer**: Read-only access to dashboards and reports
 
-<Callout kind="alert" title="Note:">
-
-At least one Admin must remain on the account at all times. The system prevents removing the last Admin to ensure account continuity.
-
+<Callout kind="alert" collapsed="false">
+  At least one Admin must remain on the account at all times. The system prevents removing the last Admin to ensure account continuity.
 </Callout>
 
 ## Configuring SSO
@@ -31,47 +28,33 @@ At least one Admin must remain on the account at all times. The system prevents 
 Single sign-on lets your team authenticate through your existing identity provider instead of managing separate passwords. Stakflo supports Okta, Google Workspace, Microsoft Entra ID, and custom SAML 2.0 providers.
 
 <Steps>
-<Step title="Open SSO settings" icon="settings">
+  <Step title="Open SSO settings" icon="settings" title-type="p">
+    Navigate to `Settings > SSO Configuration`.
+  </Step>
 
-Navigate to `Settings > SSO Configuration`.
+  <Step title="Select your provider" icon="server" title-type="p">
+    Choose Okta, Google Workspace, Microsoft Entra ID, or Custom SAML 2.0.
+  </Step>
 
-</Step>
+  <Step title="Enter configuration details" icon="file-text" title-type="p">
+    Provide the Entity ID, SSO URL, and X.509 certificate from your identity provider.
+  </Step>
 
-<Step title="Select your provider" icon="server">
+  <Step title="Map user attributes" icon="users" title-type="p">
+    Map email, name, and group attributes from your IdP to Stakflo roles.
+  </Step>
 
-Choose Okta, Google Workspace, Microsoft Entra ID, or Custom SAML 2.0.
+  <Step title="Test the connection" icon="check-circle" title-type="p">
+    Run a test login to verify the configuration works before enabling.
+  </Step>
 
-</Step>
-
-<Step title="Enter configuration details" icon="file-text">
-
-Provide the Entity ID, SSO URL, and X.509 certificate from your identity provider.
-
-</Step>
-
-<Step title="Map user attributes" icon="users">
-
-Map email, name, and group attributes from your IdP to Stakflo roles.
-
-</Step>
-
-<Step title="Test the connection" icon="check-circle">
-
-Run a test login to verify the configuration works before enabling.
-
-</Step>
-
-<Step title="Enable SSO enforcement" icon="shield">
-
-Toggle Enforce SSO to require all users to authenticate through your IdP.
-
-</Step>
+  <Step title="Enable SSO enforcement" icon="shield" title-type="p">
+    Toggle Enforce SSO to require all users to authenticate through your IdP.
+  </Step>
 </Steps>
 
-<Callout kind="alert" title="Note:">
-
-Enabling Enforce SSO disables password-based login for all users. Ensure your IdP is properly configured and tested before enabling this option.
-
+<Callout kind="alert" collapsed="false">
+  Enabling Enforce SSO disables password-based login for all users. Ensure your IdP is properly configured and tested before enabling this option.
 </Callout>
 
 ## Managing Team Members
@@ -79,88 +62,74 @@ Enabling Enforce SSO disables password-based login for all users. Ensure your Id
 Invite teammates and assign roles to distribute compliance responsibilities across your organization.
 
 <Steps>
-<Step title="Open team management" icon="users">
+  <Step title="Open team management" icon="users" title-type="p">
+    Navigate to `Settings > Team Management`.
+  </Step>
 
-Navigate to `Settings > Team Management`.
+  <Step title="Invite a member" icon="user-plus" title-type="p">
+    Click Invite Team Member and enter the person's email address.
+  </Step>
 
-</Step>
+  <Step title="Assign a role" icon="shield" title-type="p">
+    Select Admin, Manager, Contributor, or Viewer based on the access level needed.
+  </Step>
 
-<Step title="Invite a member" icon="user-plus">
-
-Click Invite Team Member and enter the person's email address.
-
-</Step>
-
-<Step title="Assign a role" icon="shield">
-
-Select Admin, Manager, Contributor, or Viewer based on the access level needed.
-
-</Step>
-
-<Step title="Send invitation" icon="mail">
-
-Click Send Invitation. The invitee receives an email link to activate their account.
-
-</Step>
+  <Step title="Send invitation" icon="mail" title-type="p">
+    Click Send Invitation. The invitee receives an email link to activate their account.
+  </Step>
 </Steps>
 
 For first-time login steps, see [Log In to Stakflo](/introduction).
 
-<Callout kind="tip" title="Pro Tip!">
-
-Use SSO group mappings to automatically assign roles based on IdP group membership. This eliminates manual role assignment as your team grows and ensures access stays in sync with your org structure.
-
+<Callout kind="tip" collapsed="false">
+  Use SSO group mappings to automatically assign roles based on IdP group membership. This eliminates manual role assignment as your team grows and ensures access stays in sync with your org structure.
 </Callout>
 
 ## Support Resources
 
 Stakflo offers multiple support channels to help you at every stage of your compliance journey.
 
-- **Email Support**: support@stakflo.com, response within 24 hours on business days
+- **Email Support**: [support@stakflo.com](mailto:support@stakflo.com), response within 24 hours on business days
 - **Customer Success Manager**: Dedicated CSM for Growth and Scale plan customers
 - **In-App Help**: Click the help icon in the bottom-right corner for contextual guidance
 - **Help Center**: Visit the [Help Center](/help-center) for FAQs, troubleshooting, and guides
 
-<Callout kind="info" title="Note:">
+<Callout kind="info" collapsed="false">
+  For urgent compliance deadline-related issues, include `Urgent` in your email subject line for priority handling.
+</Callout>
 
-For urgent compliance deadline-related issues, include `Urgent` in your email subject line for priority handling.
-
+<Callout kind="info" collapsed="false">
+  Some Stakflo features — including AI-driven capabilities like the Policy Intelligence Engine, Vendor Risk Intelligence, and Risk-to-Remediation Engine — may require specific plan tiers or add-on entitlements. Contact your CSM or [support@stakflo.com](mailto:support@stakflo.com) to confirm which features are available on your current plan. See the [Introduction](/stackflo-introduction) page for the full list of advertised capabilities.
 </Callout>
 
 ## FAQs
 
 <ExpandableGroup>
-<Expandable title="How do I reset a team member's password?">
+  <Expandable title="How do I reset a team member's password?" default-open="false">
+    If SSO is not enforced, the user can reset from the login page. If SSO is enforced, password reset is managed by your identity provider.
+  </Expandable>
 
-If SSO is not enforced, the user can reset from the login page. If SSO is enforced, password reset is managed by your identity provider.
+  <Expandable title="Can I export a list of users and their roles?" default-open="false">
+    Yes, go to `Settings > Team Management > Export` to download a CSV of all users and their assigned roles.
+  </Expandable>
 
-</Expandable>
+  <Expandable title="What happens when I deactivate a user?" default-open="false">
+    Their access is revoked immediately. Their uploaded evidence and task history are retained for audit purposes.
+  </Expandable>
 
-<Expandable title="Can I export a list of users and their roles?">
+  <Expandable title="How do I change my own role?" default-open="false">
+    You cannot change your own role. Ask another Admin to update it for you.
+  </Expandable>
 
-Yes, go to `Settings > Team Management > Export` to download a CSV of all users and their assigned roles.
+  <Expandable title="Can I bulk-import users?" default-open="false">
+    Yes, if you have SSO configured, users are synced automatically from your IdP. For manual bulk import, contact [support@stakflo.com](mailto:support@stakflo.com).
+  </Expandable>
 
-</Expandable>
-
-<Expandable title="What happens when I deactivate a user?">
-
-Their access is revoked immediately. Their uploaded evidence and task history are retained for audit purposes.
-
-</Expandable>
-
-<Expandable title="How do I change my own role?">
-
-You cannot change your own role. Ask another Admin to update it for you.
-
-</Expandable>
-
-<Expandable title="Can I bulk-import users?">
-
-Yes, if you have SSO configured, users are synced automatically from your IdP. For manual bulk import, contact support@stakflo.com.
-
-</Expandable>
+  <Expandable title="Which AI features are available on my plan?" default-open="false">
+    Some AI-driven capabilities — including the Policy Intelligence Engine, Vendor Risk Intelligence, and Risk-to-Remediation Engine — may require specific plan tiers or add-on entitlements. Contact your CSM or [support@stakflo.com](mailto:support@stakflo.com) to confirm availability on your current plan.
+  </Expandable>
 </ExpandableGroup>
 
 ## Need Help?
 
-Contact support@stakflo.com or your CSM for account-related questions. For login issues, see [Log In to Stakflo](/introduction). For navigating the platform, see [Getting Around Stakflo](/components).
+Contact [support@stakflo.com](mailto:support@stakflo.com) or your CSM for account-related questions. For login issues, see [Log In to Stakflo](/introduction). For navigating the platform, see [Getting Around Stakflo](/components).

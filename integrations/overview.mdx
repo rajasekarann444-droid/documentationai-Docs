@@ -1,58 +1,47 @@
 ---
-title: "Integrations Overview"
-description: "Connect cloud providers, identity providers, MDM, HRIS, and monitoring tools to automate evidence collection in Stakflo."
+title: Integrations Overview
+description: >-
+  Connect cloud providers, identity providers, MDM, HRIS, and monitoring tools
+  to automate evidence collection in Stakflo.
 ---
-
 ## Integrations overview
 
 Stakflo integrates with the tools you already use to automate evidence collection and maintain continuous compliance. Connect your cloud infrastructure, identity providers, and HR systems to keep your compliance data current without manual effort.
 
-<Callout kind="info" title="Who can use this feature">
+<Callout kind="info" collapsed="false">
+  Connected integrations feed evidence directly to the [Evidence](/evidence) page, where it appears alongside manual uploads. This supports Stakflo's **Audit-Ready Evidence** capability — maintaining continuously updated evidence so your controls stay audit-ready. See the [Introduction](/stackflo-introduction) page for the full list of advertised capabilities.
+</Callout>
 
-Integration management requires the Admin role. Integrations are available on all plans, though some premium integrations are exclusive to Growth and Scale plans.
-
+<Callout kind="info" collapsed="false">
+  Integration management requires the Admin role. Integrations are available on all plans, though some premium integrations are exclusive to Growth and Scale plans.
 </Callout>
 
 ## Integration categories
 
-<Columns cols={3}>
+<Columns cols="3">
+  <Card title="Cloud Providers" href="#cloud-providers" icon="cloud" horizontal="false">
+    AWS, Google Cloud Platform, and Microsoft Azure.
+  </Card>
 
-<Card title="Cloud Providers" href="#cloud-providers" icon="cloud">
+  <Card title="Identity Providers" href="#identity-providers" icon="users" horizontal="false">
+    Okta, Google Workspace, and Microsoft Entra ID.
+  </Card>
 
-AWS, Google Cloud Platform, and Microsoft Azure.
+  <Card title="MDM Tools" href="#mdm-tools" icon="smartphone" horizontal="false">
+    Jamf, Microsoft Intune, and Kandji.
+  </Card>
 
-</Card>
+  <Card title="HRIS Systems" href="#hris-tools" icon="briefcase" horizontal="false">
+    BambooHR, Workday, and Rippling.
+  </Card>
 
-<Card title="Identity Providers" href="#identity-providers" icon="users">
+  <Card title="Ticketing Systems" href="#ticketing-systems" icon="ticket" horizontal="false">
+    Jira, ServiceNow, and Zendesk.
+  </Card>
 
-Okta, Google Workspace, and Microsoft Entra ID.
-
-</Card>
-
-<Card title="MDM Tools" href="#mdm-tools" icon="smartphone">
-
-Jamf, Microsoft Intune, and Kandji.
-
-</Card>
-
-<Card title="HRIS Systems" href="#hris-tools" icon="briefcase">
-
-BambooHR, Workday, and Rippling.
-
-</Card>
-
-<Card title="Ticketing Systems" href="#ticketing-systems" icon="ticket">
-
-Jira, ServiceNow, and Zendesk.
-
-</Card>
-
-<Card title="Monitoring Tools" href="#monitoring-tools" icon="activity">
-
-Datadog, Splunk, and AWS Security Hub.
-
-</Card>
-
+  <Card title="Monitoring Tools" href="#monitoring-tools" icon="activity" horizontal="false">
+    Datadog, Splunk, and AWS Security Hub.
+  </Card>
 </Columns>
 
 ## Cloud providers
@@ -68,10 +57,8 @@ Cloud provider integrations collect infrastructure and access configuration evid
 
 **Connection type:** Read-only IAM role with specific permissions.
 
-<Callout kind="alert" title="Note:">
-
-Cloud provider integrations require a read-only IAM role. Stakflo never modifies your infrastructure. Review the required permissions on the integration setup page before connecting.
-
+<Callout kind="alert" collapsed="false">
+  Cloud provider integrations require a read-only IAM role. Stakflo never modifies your infrastructure. Review the required permissions on the integration setup page before connecting.
 </Callout>
 
 ## Identity providers
@@ -122,10 +109,8 @@ HRIS integrations provide workforce data for access reviews and employee lifecyc
 
 **Connection type:** API key with read access.
 
-<Callout kind="tip" title="Pro Tip!">
-
-Connect your HRIS tool before running access reviews. Stakflo cross-references active employees in your HRIS with users in your identity provider to flag orphaned accounts automatically.
-
+<Callout kind="tip" collapsed="false">
+  Connect your HRIS tool before running access reviews. Stakflo cross-references active employees in your HRIS with users in your identity provider to flag orphaned accounts automatically.
 </Callout>
 
 ## Ticketing systems
@@ -141,61 +126,41 @@ Monitoring integrations connect Datadog, Splunk, and AWS Security Hub to collect
 Use the following workflow to connect a provider and start collecting evidence.
 
 <Steps>
+  <Step title="Open integrations" icon="plug" title-type="p">
+    Navigate to `Integrations > Add Integration`.
+  </Step>
 
-<Step title="Open integrations" icon="plug">
+  <Step title="Select the tool" icon="list" title-type="p">
+    Choose the tool category and the specific provider you want to connect.
+  </Step>
 
-Navigate to `Integrations > Add Integration`.
+  <Step title="Authenticate" icon="key" title-type="p">
+    Follow the provider-specific authentication steps. Depending on the tool, authentication uses OAuth, an API key, or an IAM role.
+  </Step>
 
-</Step>
+  <Step title="Configure scope" icon="settings" title-type="p">
+    Select the evidence Stakflo should collect from the tool.
+  </Step>
 
-<Step title="Select the tool" icon="list">
+  <Step title="Set frequency" icon="clock" title-type="p">
+    Choose a collection frequency: daily, hourly, or real-time where supported.
+  </Step>
 
-Choose the tool category and the specific provider you want to connect.
+  <Step title="Test the connection" icon="check-circle" title-type="p">
+    Verify that the connection works before saving it.
+  </Step>
 
-</Step>
-
-<Step title="Authenticate" icon="key">
-
-Follow the provider-specific authentication steps. Depending on the tool, authentication uses OAuth, an API key, or an IAM role.
-
-</Step>
-
-<Step title="Configure scope" icon="settings">
-
-Select the evidence Stakflo should collect from the tool.
-
-</Step>
-
-<Step title="Set frequency" icon="clock">
-
-Choose a collection frequency: daily, hourly, or real-time where supported.
-
-</Step>
-
-<Step title="Test the connection" icon="check-circle">
-
-Verify that the connection works before saving it.
-
-</Step>
-
-<Step title="Verify evidence flow" icon="check">
-
-Open the Task Center and confirm that Stakflo is collecting evidence from the connected tool.
-
-</Step>
-
+  <Step title="Verify evidence flow" icon="check" title-type="p">
+    Open the Task Center and confirm that Stakflo is collecting evidence from the connected tool.
+  </Step>
 </Steps>
 
-<Callout kind="alert" title="Note:">
-
-Each integration requires specific permissions. Review the permission requirements on the integration setup page before connecting. Stakflo uses least-privilege access wherever possible.
-
+<Callout kind="alert" collapsed="false">
+  Each integration requires specific permissions. Review the permission requirements on the integration setup page before connecting. Stakflo uses least-privilege access wherever possible.
 </Callout>
 
-<Callout kind="tip" title="Pro Tip!">
-
-For multi-account cloud setups, such as multiple AWS accounts, connect each account separately. Stakflo aggregates evidence across accounts in the unified dashboard.
-
+<Callout kind="tip" collapsed="false">
+  For multi-account cloud setups, such as multiple AWS accounts, connect each account separately. Stakflo aggregates evidence across accounts in the unified dashboard.
 </Callout>
 
 ## Integration health
@@ -208,41 +173,45 @@ Monitor integration status from the Integrations dashboard. Health indicators sh
 
 Stakflo proactively alerts you 7 days before a token or API key expires.
 
-<Callout kind="alert" title="Note:">
-
-Failed integrations pause evidence collection for that source. Address integration errors promptly to avoid gaps in your readiness score.
-
+<Callout kind="alert" collapsed="false">
+  Failed integrations pause evidence collection for that source. Address integration errors promptly to avoid gaps in your readiness score.
 </Callout>
 
 ## FAQs
 
 <ExpandableGroup>
+  <Expandable title="What if my tool isn't listed?" default-open="false">
+    Contact [support@stakflo.com](mailto:support@stakflo.com). Stakflo regularly adds new integrations and may support your tool through custom API configuration.
+  </Expandable>
 
-<Expandable title="What if my tool isn't listed?">
+  <Expandable title="Can I connect multiple instances of the same tool?" default-open="false">
+    Yes. Connect multiple AWS accounts, Okta tenants, or instances of another supported tool. Stakflo manages each connection separately and aggregates the evidence in the unified dashboard.
+  </Expandable>
 
-Contact [support@stakflo.com](mailto:support@stakflo.com). Stakflo regularly adds new integrations and may support your tool through custom API configuration.
+  <Expandable title="How often is evidence collected?" default-open="false">
+    Most integrations collect evidence daily. Cloud providers and identity providers support hourly collection on Growth and Scale plans.
+  </Expandable>
 
-</Expandable>
-
-<Expandable title="Can I connect multiple instances of the same tool?">
-
-Yes. Connect multiple AWS accounts, Okta tenants, or instances of another supported tool. Stakflo manages each connection separately and aggregates the evidence in the unified dashboard.
-
-</Expandable>
-
-<Expandable title="How often is evidence collected?">
-
-Most integrations collect evidence daily. Cloud providers and identity providers support hourly collection on Growth and Scale plans.
-
-</Expandable>
-
-<Expandable title="Is my data secure?">
-
-Yes. All integrations use encrypted connections with TLS 1.2 or later. Stakflo stores evidence with AES-256 encryption and is SOC 2 Type II certified.
-
-</Expandable>
-
+  <Expandable title="Is my data secure?" default-open="false">
+    Yes. All integrations use encrypted connections with TLS 1.2 or later. Stakflo stores evidence with AES-256 encryption and is SOC 2 Type II certified.
+  </Expandable>
 </ExpandableGroup>
+
+## Next steps
+
+<Columns cols="3">
+  <Card title="Evidence" href="/evidence" horizontal="false">
+    Review evidence collected from connected integrations.
+  </Card>
+
+  <Card title="Audit Readiness" href="/compliance/audit-readiness" horizontal="false">
+    See how integration evidence supports audit readiness.
+  </Card>
+
+  <Card title="Frameworks & Controls" href="/compliance/frameworks" horizontal="false">
+    Map collected evidence to framework controls.
+  </Card>
+</Columns>
 
 ## Need help?
 

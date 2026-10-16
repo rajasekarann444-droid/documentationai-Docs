@@ -1,16 +1,20 @@
 ---
-title: "Policies"
-description: "Create, import, publish, and manage compliance policies in Stakflo. Review policy status, approval workflows, and acceptance metrics from the policy dashboard."
+title: Policies
+description: >-
+  Create, import, publish, and manage compliance policies in Stakflo. Review
+  policy status, approval workflows, and acceptance metrics from the policy
+  dashboard.
 ---
-
 ## Manage your compliance policies
 
 Policies are the foundation of your compliance program. Stakflo lets you create policies from templates, import existing documents, and manage the full lifecycle from draft to publication to revision.
 
-<Callout kind="info" title="Who can use this feature">
+<Callout kind="info" collapsed="false">
+  Stakflo advertises a **Policy Intelligence Engine** capability for intelligent policy management and cross-framework mapping. Availability may vary by plan. See the full list of advertised capabilities on the [Introduction](/stackflo-introduction) page.
+</Callout>
 
-Policy management is available to Admin and Manager roles. Policy templates are available on all plans. Custom policy creation is available on Growth and Scale plans.
-
+<Callout kind="info" collapsed="false">
+  Policy management is available to Admin and Manager roles. Policy templates are available on all plans. Custom policy creation is available on Growth and Scale plans.
 </Callout>
 
 ## Policy dashboard
@@ -55,47 +59,33 @@ Use the relevant tab to find the policy information you need.
 Create a policy from a template or write one from scratch, then submit it for approval before publication.
 
 <Steps>
-<Step title="Start a new policy" icon="plus">
+  <Step title="Start a new policy" icon="plus" title-type="p">
+    Navigate to `Policies > Create New`.
+  </Step>
 
-Navigate to `Policies > Create New`.
+  <Step title="Choose a starting point" icon="file-text" title-type="p">
+    Select a template or create the policy from scratch.
+  </Step>
 
-</Step>
+  <Step title="Enter details" icon="edit" title-type="p">
+    Add the policy title and category.
+  </Step>
 
-<Step title="Choose a starting point" icon="file-text">
+  <Step title="Write content" icon="pen-tool" title-type="p">
+    Use the Markdown editor to write or edit the policy body.
+  </Step>
 
-Select a template or create the policy from scratch.
+  <Step title="Insert variables" icon="code" title-type="p">
+    Add dynamic variables for content that Stakflo should populate automatically.
+  </Step>
 
-</Step>
+  <Step title="Assign approvers" icon="users" title-type="p">
+    Select the people who must approve the policy before publication.
+  </Step>
 
-<Step title="Enter details" icon="edit">
-
-Add the policy title and category.
-
-</Step>
-
-<Step title="Write content" icon="pen-tool">
-
-Use the Markdown editor to write or edit the policy body.
-
-</Step>
-
-<Step title="Insert variables" icon="code">
-
-Add dynamic variables for content that Stakflo should populate automatically.
-
-</Step>
-
-<Step title="Assign approvers" icon="users">
-
-Select the people who must approve the policy before publication.
-
-</Step>
-
-<Step title="Submit for review" icon="send">
-
-Click **Submit** to start the approval workflow.
-
-</Step>
+  <Step title="Submit for review" icon="send" title-type="p">
+    Click **Submit** to start the approval workflow.
+  </Step>
 </Steps>
 
 ### Using templates
@@ -111,10 +101,8 @@ The template library includes pre-written policies for common compliance require
 
 Templates align with SOC 2, ISO 27001, HIPAA, and GDPR requirements. After you create a policy from a template, you can edit the content to match your organization.
 
-<Callout kind="tip" title="Pro Tip!">
-
-Start with a template even if you already have an existing policy. Templates include framework-aligned control mappings that automatically link your policy to the appropriate controls.
-
+<Callout kind="tip" collapsed="false">
+  Start with a template even if you already have an existing policy. Templates include framework-aligned control mappings that automatically link your policy to the appropriate controls.
 </Callout>
 
 ### Adding variables
@@ -129,10 +117,8 @@ Supported variables include:
 - `{{owner_name}}`
 - `{{department}}`
 
-<Callout kind="alert" title="Note:">
-
-Define variables in **Organization Settings** before using them in a policy. Undefined variables appear as blank text in published policies.
-
+<Callout kind="alert" collapsed="false">
+  Define variables in **Organization Settings** before using them in a policy. Undefined variables appear as blank text in published policies.
 </Callout>
 
 ## Importing policies
@@ -140,41 +126,29 @@ Define variables in **Organization Settings** before using them in a policy. Und
 Import an existing policy when you want to preserve source content instead of starting with a template or blank document.
 
 <Steps>
-<Step title="Open import" icon="upload">
+  <Step title="Open import" icon="upload" title-type="p">
+    Navigate to `Policies > Import`.
+  </Step>
 
-Navigate to `Policies > Import`.
+  <Step title="Upload document" icon="file-up" title-type="p">
+    Upload your policy file in `.docx`, `.pdf`, or `.md` format.
+  </Step>
 
-</Step>
+  <Step title="Review content" icon="eye" title-type="p">
+    Check the imported content in the editor and correct any formatting or content changes.
+  </Step>
 
-<Step title="Upload document" icon="file-up">
+  <Step title="Map to controls" icon="link" title-type="p">
+    Link policy sections to the relevant control requirements.
+  </Step>
 
-Upload your policy file in `.docx`, `.pdf`, or `.md` format.
-
-</Step>
-
-<Step title="Review content" icon="eye">
-
-Check the imported content in the editor and correct any formatting or content changes.
-
-</Step>
-
-<Step title="Map to controls" icon="link">
-
-Link policy sections to the relevant control requirements.
-
-</Step>
-
-<Step title="Save as draft" icon="save">
-
-Save the imported policy as a draft for review.
-
-</Step>
+  <Step title="Save as draft" icon="save" title-type="p">
+    Save the imported policy as a draft for review.
+  </Step>
 </Steps>
 
-<Callout kind="alert" title="Note:">
-
-Imported PDFs may lose formatting. For the best results, import a `.docx` or `.md` file. Always review imported content before publishing.
-
+<Callout kind="alert" collapsed="false">
+  Imported PDFs may lose formatting. For the best results, import a `.docx` or `.md` file. Always review imported content before publishing.
 </Callout>
 
 ## Publishing policies
@@ -182,41 +156,29 @@ Imported PDFs may lose formatting. For the best results, import a `.docx` or `.m
 Publish a policy after its content has been reviewed and all required approvers have approved it.
 
 <Steps>
-<Step title="Open the draft" icon="folder-open">
+  <Step title="Open the draft" icon="folder-open" title-type="p">
+    Open the policy you want to publish.
+  </Step>
 
-Open the policy you want to publish.
+  <Step title="Submit for approval" icon="send" title-type="p">
+    Click **Submit for Approval** to notify the assigned approvers.
+  </Step>
 
-</Step>
+  <Step title="Approver reviews" icon="check-circle" title-type="p">
+    Approvers receive a notification and review the policy.
+  </Step>
 
-<Step title="Submit for approval" icon="send">
+  <Step title="Publish" icon="globe" title-type="p">
+    After approval, click **Publish** to make the policy live.
+  </Step>
 
-Click **Submit for Approval** to notify the assigned approvers.
-
-</Step>
-
-<Step title="Approver reviews" icon="check-circle">
-
-Approvers receive a notification and review the policy.
-
-</Step>
-
-<Step title="Publish" icon="globe">
-
-After approval, click **Publish** to make the policy live.
-
-</Step>
-
-<Step title="Policy goes live" icon="check">
-
-The policy becomes available on your policy portal and is added to the employee onboarding checklist.
-
-</Step>
+  <Step title="Policy goes live" icon="check" title-type="p">
+    The policy becomes available on your policy portal and is added to the employee onboarding checklist.
+  </Step>
 </Steps>
 
-<Callout kind="alert" title="Note:">
-
-Published policies cannot be edited directly. Create a new revision to make changes.
-
+<Callout kind="alert" collapsed="false">
+  Published policies cannot be edited directly. Create a new revision to make changes.
 </Callout>
 
 ## Revision history
@@ -230,39 +192,45 @@ Revision History lets you:
 - Restore a previous revision when needed.
 - Track how policy content changed over time.
 
-<Callout kind="tip" title="Pro Tip!">
-
-Use revision history to demonstrate policy evolution during audits. Auditors want to see that policies are reviewed and updated regularly, not only stored as static documents.
-
+<Callout kind="tip" collapsed="false">
+  Use revision history to demonstrate policy evolution during audits. Auditors want to see that policies are reviewed and updated regularly, not only stored as static documents.
 </Callout>
 
 ## FAQs
 
 <ExpandableGroup>
-<Expandable title="Can I require employees to acknowledge policies?">
+  <Expandable title="Can I require employees to acknowledge policies?" default-open="false">
+    Yes. Enable policy acknowledgments in **Settings**. Employees receive a task to read and acknowledge each published policy.
+  </Expandable>
 
-Yes. Enable policy acknowledgments in **Settings**. Employees receive a task to read and acknowledge each published policy.
+  <Expandable title="How often should policies be reviewed?" default-open="false">
+    Stakflo recommends annual reviews. Set review reminders in the policy settings to receive a notification before the review date.
+  </Expandable>
 
-</Expandable>
+  <Expandable title="Can I customize a template?" default-open="false">
+    Yes. Templates are fully editable after you create a policy from them. Your changes apply only to the new policy and do not modify the original template.
+  </Expandable>
 
-<Expandable title="How often should policies be reviewed?">
-
-Stakflo recommends annual reviews. Set review reminders in the policy settings to receive a notification before the review date.
-
-</Expandable>
-
-<Expandable title="Can I customize a template?">
-
-Yes. Templates are fully editable after you create a policy from them. Your changes apply only to the new policy and do not modify the original template.
-
-</Expandable>
-
-<Expandable title="How do I share policies with external auditors?">
-
-Use the Trust Portal or export the policy to PDF from the policy page. You can also grant auditors read-only access during an audit window.
-
-</Expandable>
+  <Expandable title="How do I share policies with external auditors?" default-open="false">
+    Use the Trust Portal or export the policy to PDF from the policy page. You can also grant auditors read-only access during an audit window.
+  </Expandable>
 </ExpandableGroup>
+
+## Next steps
+
+<Columns cols="3">
+  <Card title="Frameworks & Controls" href="/compliance/frameworks" horizontal="false">
+    Browse supported frameworks and map controls.
+  </Card>
+
+  <Card title="Evidence" href="/evidence" horizontal="false">
+    Collect and organize audit-ready evidence.
+  </Card>
+
+  <Card title="Audit Readiness" href="/compliance/audit-readiness" horizontal="false">
+    Prepare for and manage audits.
+  </Card>
+</Columns>
 
 ## Need help?
 

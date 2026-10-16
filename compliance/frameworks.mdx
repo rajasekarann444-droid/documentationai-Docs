@@ -1,16 +1,20 @@
 ---
-title: "Frameworks & Controls"
-description: "Explore supported compliance frameworks, map controls across multiple standards, manage your unified control framework, and track framework progress in Stakflo."
+title: Frameworks & Controls
+description: >-
+  Explore supported compliance frameworks, map controls across multiple
+  standards, manage your unified control framework, and track framework progress
+  in Stakflo.
 ---
-
 ## Frameworks and controls
 
 Stakflo supports industry-standard compliance frameworks out of the box. Learn how to select frameworks, map controls, and use the unified control framework to reduce duplication across audits.
 
-<Callout kind="info" title="Who can use this feature">
+<Callout kind="info" collapsed="false">
+  Stakflo's **Multi-Framework Coverage** and **Prioritized Controls** capabilities let you manage multiple compliance frameworks in one workspace with a unified control set. See the full list of advertised capabilities on the [Introduction](/stackflo-introduction) page.
+</Callout>
 
-Framework management is available to Admin and Manager roles. Supported plans include Foundation with up to 2 frameworks, Growth with up to 5 frameworks, and Scale with unlimited frameworks.
-
+<Callout kind="info" collapsed="false">
+  Framework management is available to Admin and Manager roles. Supported plans include Foundation with up to 2 frameworks, Growth with up to 5 frameworks, and Scale with unlimited frameworks.
 </Callout>
 
 ## Framework dashboard
@@ -45,60 +49,42 @@ Open an active framework and review its details to understand its control covera
 
 ## Supported frameworks
 
-<Columns cols={3}>
-<Card title="SOC 2 Type II" href="/compliance/frameworks#soc-2-type-ii" icon="shield">
+<Columns cols="3">
+  <Card title="SOC 2 Type II" href="/compliance/frameworks#soc-2-type-ii" icon="shield" horizontal="false">
+    Trust Services Criteria with 64 controls.
+  </Card>
 
-Trust Services Criteria with 64 controls.
+  <Card title="ISO 27001" href="/compliance/frameworks#iso-27001" icon="lock" horizontal="false">
+    Information security management with 114 controls.
+  </Card>
 
-</Card>
+  <Card title="ISO 27701" href="/compliance/frameworks#iso-27701" icon="user-check" horizontal="false">
+    Privacy information management extension.
+  </Card>
 
-<Card title="ISO 27001" href="/compliance/frameworks#iso-27001" icon="lock">
+  <Card title="HIPAA" href="/compliance/frameworks#hipaa" icon="heart-pulse" horizontal="false">
+    Healthcare privacy and security requirements.
+  </Card>
 
-Information security management with 114 controls.
+  <Card title="GDPR" href="/compliance/frameworks#gdpr" icon="globe" horizontal="false">
+    EU data protection regulation.
+  </Card>
 
-</Card>
+  <Card title="PCI DSS" href="/compliance/frameworks#pci-dss" icon="credit-card" horizontal="false">
+    Payment card data security standard.
+  </Card>
 
-<Card title="ISO 27701" href="/compliance/frameworks#iso-27701" icon="user-check">
+  <Card title="NIST CSF 2.0" href="/compliance/frameworks#nist-csf-20" icon="server" horizontal="false">
+    Cybersecurity framework with 108 controls.
+  </Card>
 
-Privacy information management extension.
+  <Card title="CIS Controls v8" href="/compliance/frameworks#cis-controls-v8" icon="check-circle" horizontal="false">
+    Critical security controls.
+  </Card>
 
-</Card>
-
-<Card title="HIPAA" href="/compliance/frameworks#hipaa" icon="heart-pulse">
-
-Healthcare privacy and security requirements.
-
-</Card>
-
-<Card title="GDPR" href="/compliance/frameworks#gdpr" icon="globe">
-
-EU data protection regulation.
-
-</Card>
-
-<Card title="PCI DSS" href="/compliance/frameworks#pci-dss" icon="credit-card">
-
-Payment card data security standard.
-
-</Card>
-
-<Card title="NIST CSF 2.0" href="/compliance/frameworks#nist-csf-20" icon="server">
-
-Cybersecurity framework with 108 controls.
-
-</Card>
-
-<Card title="CIS Controls v8" href="/compliance/frameworks#cis-controls-v8" icon="check-circle">
-
-Critical security controls.
-
-</Card>
-
-<Card title="Custom Framework" href="/compliance/frameworks#custom-framework" icon="settings">
-
-Build your own framework on Growth and Scale plans.
-
-</Card>
+  <Card title="Custom Framework" href="/compliance/frameworks#custom-framework" icon="settings" horizontal="false">
+    Build your own framework on Growth and Scale plans.
+  </Card>
 </Columns>
 
 ## Unified control framework
@@ -114,10 +100,8 @@ This approach helps you:
 - Maintain consistent implementation details across frameworks.
 - Collect and reuse evidence for related requirements.
 
-<Callout kind="tip" title="Pro Tip!">
-
-Map controls to your most demanding framework first, typically SOC 2 or ISO 27001. The unified framework automatically populates mappings for less stringent frameworks, saving hours of manual work.
-
+<Callout kind="tip" collapsed="false">
+  Map controls to your most demanding framework first, typically SOC 2 or ISO 27001. The unified framework automatically populates mappings for less stringent frameworks, saving hours of manual work.
 </Callout>
 
 ## Selecting frameworks
@@ -125,35 +109,25 @@ Map controls to your most demanding framework first, typically SOC 2 or ISO 2700
 Use framework management to enable the standards your organization needs to track.
 
 <Steps>
-<Step title="Open framework management" icon="settings">
+  <Step title="Open framework management" icon="settings" title-type="p">
+    Navigate to `Frameworks > Manage Frameworks`.
+  </Step>
 
-Navigate to `Frameworks > Manage Frameworks`.
+  <Step title="Browse the library" icon="search" title-type="p">
+    Review the available frameworks and their control counts.
+  </Step>
 
-</Step>
+  <Step title="Enable a framework" icon="plus" title-type="p">
+    Select **Enable** on each framework you need.
+  </Step>
 
-<Step title="Browse the library" icon="search">
-
-Review the available frameworks and their control counts.
-
-</Step>
-
-<Step title="Enable a framework" icon="plus">
-
-Select **Enable** on each framework you need.
-
-</Step>
-
-<Step title="Review auto-mapped controls" icon="check-circle">
-
-Open the unified view to see how the new controls map to existing controls.
-
-</Step>
+  <Step title="Review auto-mapped controls" icon="check-circle" title-type="p">
+    Open the unified view to see how the new controls map to existing controls.
+  </Step>
 </Steps>
 
-<Callout kind="alert" title="Note:">
-
-Enabling a framework immediately adds its controls to your task list. Confirm that your team has capacity to manage the additional requirements before enabling multiple frameworks at the same time.
-
+<Callout kind="alert" collapsed="false">
+  Enabling a framework immediately adds its controls to your task list. Confirm that your team has capacity to manage the additional requirements before enabling multiple frameworks at the same time.
 </Callout>
 
 ## Mapping controls
@@ -161,29 +135,21 @@ Enabling a framework immediately adds its controls to your task list. Confirm th
 Review and adjust framework mappings from the unified control list.
 
 <Steps>
-<Step title="Open a control" icon="folder-open">
+  <Step title="Open a control" icon="folder-open" title-type="p">
+    Select a control from the unified control list.
+  </Step>
 
-Select a control from the unified control list.
+  <Step title="Review auto-mappings" icon="eye" title-type="p">
+    Check which framework requirements Stakflo mapped automatically.
+  </Step>
 
-</Step>
+  <Step title="Adjust mappings" icon="edit" title-type="p">
+    Add or modify manual mappings when the automatic mappings do not match your implementation.
+  </Step>
 
-<Step title="Review auto-mappings" icon="eye">
-
-Check which framework requirements Stakflo mapped automatically.
-
-</Step>
-
-<Step title="Adjust mappings" icon="edit">
-
-Add or modify manual mappings when the automatic mappings do not match your implementation.
-
-</Step>
-
-<Step title="Save" icon="save">
-
-Save the control with its updated mappings.
-
-</Step>
+  <Step title="Save" icon="save" title-type="p">
+    Save the control with its updated mappings.
+  </Step>
 </Steps>
 
 ## Managing controls
@@ -203,30 +169,38 @@ Link controls to department owners so each requirement has a clear person or tea
 ## FAQs
 
 <ExpandableGroup>
-<Expandable title="Can I add a custom framework?">
+  <Expandable title="Can I add a custom framework?" default-open="false">
+    Yes. Use the Custom Framework Builder, available on Growth and Scale plans.
+  </Expandable>
 
-Yes. Use the Custom Framework Builder, available on Growth and Scale plans.
+  <Expandable title="How does control mapping work between SOC 2 and ISO 27001?" default-open="false">
+    The unified framework automatically maps common controls between SOC 2 and ISO 27001. Review the mappings and adjust them manually when your implementation requires a different relationship.
+  </Expandable>
 
-</Expandable>
+  <Expandable title="What if a control does not apply to my organization?" default-open="false">
+    Mark the control as **N/A** and provide a justification. Stakflo excludes controls marked N/A from your readiness score.
+  </Expandable>
 
-<Expandable title="How does control mapping work between SOC 2 and ISO 27001?">
-
-The unified framework automatically maps common controls between SOC 2 and ISO 27001. Review the mappings and adjust them manually when your implementation requires a different relationship.
-
-</Expandable>
-
-<Expandable title="What if a control does not apply to my organization?">
-
-Mark the control as **N/A** and provide a justification. Stakflo excludes controls marked N/A from your readiness score.
-
-</Expandable>
-
-<Expandable title="Can I export my control mappings?">
-
-Yes. Navigate to `Reports > Control Mapping Export` to download your mappings as a CSV or PDF.
-
-</Expandable>
+  <Expandable title="Can I export my control mappings?" default-open="false">
+    Yes. Navigate to `Reports > Control Mapping Export` to download your mappings as a CSV or PDF.
+  </Expandable>
 </ExpandableGroup>
+
+## Next steps
+
+<Columns cols="3">
+  <Card title="Unified Controls" href="/unified-controls" horizontal="false">
+    See how controls map across frameworks.
+  </Card>
+
+  <Card title="Policies" href="/compliance/policies" horizontal="false">
+    Create, import, and publish compliance policies.
+  </Card>
+
+  <Card title="Audit Readiness" href="/compliance/audit-readiness" horizontal="false">
+    Prepare for and manage audits.
+  </Card>
+</Columns>
 
 ## Need help?
 

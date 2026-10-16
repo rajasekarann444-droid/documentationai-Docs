@@ -11,211 +11,196 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
-        "icon": "rocket",
+        "icon": "book-open",
+        "tab": "Stakflo Help Center",
         "groups": [
           {
-            "group": "Welcome",
+            "group": "Getting Started",
+            "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "stackflo-introduction"
+                "group": "Welcome",
+                "pages": [
+                  {
+                    "title": "Introduction",
+                    "path": "stackflo-introduction"
+                  },
+                  {
+                    "title": "Dashboard Overview",
+                    "path": "dashboard-overviews"
+                  }
+                ]
               },
               {
-                "title": "Dashboard Overview",
-                "path": "dashboard-overviews"
+                "group": "Onboarding & Setup",
+                "icon": "play",
+                "pages": [
+                  {
+                    "title": "Log In to Stakflo",
+                    "path": "introduction",
+                    "icon": "log-in"
+                  },
+                  {
+                    "title": "Quick Start Guide",
+                    "path": "quickstart",
+                    "icon": "zap"
+                  },
+                  {
+                    "title": "Complete Onboarding Tasks",
+                    "path": "concepts",
+                    "icon": "check-square"
+                  }
+                ]
+              },
+              {
+                "group": "Getting Around",
+                "icon": "compass",
+                "pages": [
+                  {
+                    "title": "Getting Around Stakflo",
+                    "path": "components",
+                    "icon": "layout"
+                  },
+                  {
+                    "title": "Account, Access & Support",
+                    "path": "authentication",
+                    "icon": "settings"
+                  }
+                ]
               }
             ]
           },
           {
-            "group": "Onboarding & Setup",
-            "icon": "play",
+            "group": "Compliance",
+            "icon": "shield-check",
             "pages": [
               {
-                "title": "Log In to Stakflo",
-                "path": "introduction",
-                "icon": "log-in"
+                "group": "Frameworks & Controls",
+                "icon": "list-checks",
+                "pages": [
+                  {
+                    "title": "Frameworks & Controls",
+                    "path": "compliance/frameworks",
+                    "icon": "shield"
+                  },
+                  {
+                    "title": "Unified Controls",
+                    "path": "unified-controls"
+                  }
+                ]
               },
               {
-                "title": "Quick Start Guide: Setup Wizard",
-                "path": "quickstart",
-                "icon": "zap"
+                "group": "Policies & Evidence",
+                "icon": "file-text",
+                "pages": [
+                  {
+                    "title": "Policies",
+                    "path": "compliance/policies",
+                    "icon": "file-text"
+                  },
+                  {
+                    "title": "Evidence",
+                    "path": "evidence"
+                  }
+                ]
               },
               {
-                "title": "Complete Onboarding Tasks",
-                "path": "concepts",
-                "icon": "check-square"
+                "group": "Audit Readiness",
+                "icon": "clipboard-check",
+                "pages": [
+                  {
+                    "title": "Audit Readiness",
+                    "path": "compliance/audit-readiness",
+                    "icon": "clipboard-check"
+                  }
+                ]
               }
             ]
           },
-          {
-            "group": "Getting Around",
-            "icon": "compass",
-            "pages": [
-              {
-                "title": "Getting Around Stakflo",
-                "path": "components",
-                "icon": "layout"
-              },
-              {
-                "title": "Account, Access & Support",
-                "path": "authentication",
-                "icon": "settings"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Compliance",
-        "icon": "shield-check",
-        "groups": [
-          {
-            "group": "Frameworks & Controls",
-            "icon": "list-checks",
-            "pages": [
-              {
-                "title": "Frameworks & Controls",
-                "path": "compliance/frameworks",
-                "icon": "shield"
-              },
-              {
-                "title": "Unified Controls",
-                "path": "unified-controls"
-              }
-            ]
-          },
-          {
-            "group": "Policies & Evidence",
-            "icon": "file-text",
-            "pages": [
-              {
-                "title": "Policies",
-                "path": "compliance/policies",
-                "icon": "file-text"
-              },
-              {
-                "title": "Evidence",
-                "path": "evidence"
-              }
-            ]
-          },
-          {
-            "group": "Audit Readiness",
-            "icon": "clipboard-check",
-            "pages": [
-              {
-                "title": "Audit Readiness",
-                "path": "compliance/audit-readiness",
-                "icon": "clipboard-check"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Risk Management",
-        "icon": "shield-alert",
-        "groups": [
           {
             "group": "Risk Management",
+            "icon": "shield-alert",
             "pages": [
               {
-                "title": "Risk Management Overview",
-                "path": "risk-management-overview"
+                "group": "Risk Assessment",
+                "pages": [
+                  {
+                    "title": "Risk Management Overview",
+                    "path": "risk-management-overview"
+                  },
+                  {
+                    "title": "Risk Register",
+                    "path": "risk-register"
+                  },
+                  {
+                    "title": "Risk Library",
+                    "path": "risk-library"
+                  }
+                ]
               },
               {
-                "title": "Risk Register",
-                "path": "risk-register"
-              },
-              {
-                "title": "Risk Library",
-                "path": "risk-library"
+                "group": "Third-Party Risk",
+                "pages": [
+                  {
+                    "title": "TPRM Overview",
+                    "path": "tprm-overview"
+                  },
+                  {
+                    "title": "Vendor Inventory",
+                    "path": "inventory"
+                  }
+                ]
               }
             ]
           },
           {
-            "group": "Third-Party Risk Management",
+            "group": "Integrations",
+            "icon": "plug",
             "pages": [
               {
-                "title": "TPRM Overview",
-                "path": "tprm-overview"
-              },
-              {
-                "title": "Vendor Inventory",
-                "path": "inventory"
+                "group": "Connections",
+                "icon": "view-grid",
+                "pages": [
+                  {
+                    "title": "Integrations Overview",
+                    "path": "integrations/overview",
+                    "icon": "plug"
+                  }
+                ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Integrations",
-        "icon": "plug",
-        "groups": [
-          {
-            "group": "Overview",
-            "icon": "view-grid",
-            "pages": [
-              {
-                "title": "Integrations Overview",
-                "path": "integrations/overview",
-                "icon": "plug"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Help Center",
-        "icon": "help-circle",
-        "pages": [
-          {
-            "title": "Help Center",
-            "path": "help-center",
-            "icon": "home"
           },
           {
-            "group": "FAQs",
+            "group": "Help Center",
             "icon": "help-circle",
-            "expandable": false,
             "pages": [
               {
-                "title": "Common Questions",
-                "path": "help-center/faq/getting-started"
-              }
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "icon": "alert-triangle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Common Issues",
-                "path": "help-center/troubleshooting/install-error"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "book-open",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Setup Guide",
-                "path": "help-center/guides/setup-project"
-              }
-            ]
-          },
-          {
-            "group": "Product Updates",
-            "icon": "clock",
-            "pages": [
-              {
-                "title": "Product Updates",
-                "path": "changelog",
-                "icon": "history"
+                "group": "Support Resources",
+                "icon": "life-buoy",
+                "pages": [
+                  {
+                    "title": "Help Center",
+                    "path": "help-center",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "FAQs",
+                    "path": "help-center/faq/getting-started"
+                  },
+                  {
+                    "title": "Troubleshooting",
+                    "path": "help-center/troubleshooting/install-error"
+                  },
+                  {
+                    "title": "Guides",
+                    "path": "help-center/guides/setup-project"
+                  },
+                  {
+                    "title": "Product Updates",
+                    "path": "changelog",
+                    "icon": "history"
+                  }
+                ]
               }
             ]
           }
