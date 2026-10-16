@@ -1,0 +1,31 @@
+/* Stakflo header tagline — injects "Compliance Automated" as a secondary text
+   element beside/below the brand name in the site header.
+   Uses currentColor + opacity for automatic light/dark theme adaptation. */
+
+/* Target common brand/logo link elements inside the site header. */
+header [class*="logo"] a,
+header [class*="brand"] a,
+[class*="header"] [class*="logo"] a,
+[class*="header"] [class*="brand"] a,
+[class*="navbar"] [class*="logo"] a,
+[class*="navbar"] [class*="brand"] a {
+  display: inline-block;
+}
+
+/* Append the tagline as a smaller, muted line beneath the brand name. */
+header [class*="logo"] a::after,
+header [class*="brand"] a::after,
+[class*="header"] [class*="logo"] a::after,
+[class*="header"] [class*="brand"] a::after,
+[class*="navbar"] [class*="logo"] a::after,
+[class*="navbar"] [class*="brand"] a::after {
+  content: "Compliance Automated";
+  display: block;
+  font-size: 0.65em;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 0.15em;
+  color: currentColor;
+  opacity: 0.65;
+  white-space: nowrap;
+}
